@@ -1,9 +1,12 @@
 #remove spaces and numbers from DNA_seq
 
-with open("/home/yobi/Documents/Bioinformatics/Biocomp2/dummy_dna.txt", 'r') as f:
-    file=f.read()
-for i in file:
-    i.replace(' ','')
-    file.append(i)
-    
-print(file)
+def clean_wspace(dna_seq):
+    dna_seq = dna_seq.replace('\n', '')
+    dna_seq = dna_seq.replace(' ', '')
+    return(dna_seq)
+
+
+def clean_nos(dna_seq):
+    nos = ['0','1','2','3','4','5','6','7','8','9']
+    dna_seq = dna_seq.replace(nos, '')
+    return(dna_seq)
