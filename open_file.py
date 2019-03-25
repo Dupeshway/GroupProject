@@ -8,3 +8,5 @@ def open_file(file):
 
     with open("dummyfile.txt", "r") as f:
         file= f.read().splitlines()
+        
+        return: file
