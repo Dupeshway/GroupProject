@@ -1,4 +1,6 @@
-#Ignore NNN AAs
+#!/usr/bin/env python3
+
+#Ignore NNN AAs (incomplete-errors)
 
 def ignore_nnn(string):
     '''ignore database codon entries with N
