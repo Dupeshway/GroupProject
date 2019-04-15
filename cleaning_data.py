@@ -1,17 +1,42 @@
 #!/usr/bin/env python3
 
-#remove spaces and numbers from DNA_seq
+#Yobi Livingstone
+import re
 
 class clean_data:
+    '''Every function is intended to join, remove, replace iterables (strings, lists etc)
+    to make the data easier to handle after capturing/parsing'''
 
 
     def join_strings(raw_data):
-        clean_data=''
+        '''Join strings
+        input: raw_data be multiple strings or lists
+        output: raw_data turned into a single string: clean_data'''
 
+        clean_data=''
         clean_data=clean_data.join(raw_data)
         return clean_data
 
-        
+
+    def clean_cds_region(raw_data):
+        raw_data=str(raw_data)
+        clean_data=re.sub('[join()<>+{}]','', raw_data)
+        return clean_data
+
+
+
+    def remove_version(acc_no):
+        '''Accession numbers captured have a version number after a decimal point
+        at the end of the number i.e AB12345678.1 This removes the version number [.1]
+        input:Accession numbers with version number attached
+        output: Accession number without version number attached
+        '''
+        acc_no=str(acc_no)
+        for i in acc_no:
+            if i=='.':
+                acc_no = acc_no[:-2] #captures all except the last two places
+        return acc_no
+
 
     def clean_wspace(dna_seq):
         '''Remove white space and line seperators in all forms
@@ -23,7 +48,7 @@ class clean_data:
         return(dna_seq)
 
 
-    def clean_nos(dna_seq):
+    def clean_nos(raw_data):
         '''Remove all numbers from FASTA format DNA sequence
         input: raw DNA sequence in FASTA
         output: raw DNA sequence without FASTA numbers'''
@@ -32,3 +57,24 @@ class clean_data:
         dna_seq = dna_seq.replace(nos, '')
 
         return(dna_seq)
+
+    
+
+    def ignore_nnn(raw_data):
+        '''ignore database codon entries with N
+        Input: string(DNA seq) is read from text file
+        Output: clean_string without N is passed through, codons with N is ignored
+        '''
+        clean_string=''
+    
+        for i in raw_data:
+            if i!='N' or 'n':
+                clean_string.append(string)
+            else:
+                continue
+    
+        return clean_string
+
+
+
+     
