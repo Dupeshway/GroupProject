@@ -1,0 +1,314 @@
+//
+LOCUS       AB002137                4097 bp    DNA     linear   PRI 28-JUN-2008
+DEFINITION  Homo sapiens GPAA1 gene for glycosylphosphatidylinositol anchor
+            attachment 1, complete cds.
+ACCESSION   AB002137
+VERSION     AB002137.1  GI:5572754
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Inoue,N., Ohishi,K., Endo,Y., Fujita,T., Takeda,J. and Kinoshita,T.
+  TITLE     Human and mouse GPAA1 (Glycosylphosphatidylinositol anchor
+            attachment 1) genes: genomic structures, chromosome loci and the
+            presence of a minor class intron
+  JOURNAL   Cytogenet. Cell Genet. 84 (3-4), 199-205 (1999)
+   PUBMED   10393431
+REFERENCE   2  (bases 1 to 4097)
+  AUTHORS   Inoue,N., Ohishi,K., Endo,Y., Fujita,T., Takeda,J. and Kinoshita,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-MAR-1997) Contact:Norimitsu Inoue Osaka University,
+            Research Institute for Microbial Diseases; 3-1 Yamadaoka, Suita,
+            Osaka 565, Japan
+FEATURES             Location/Qualifiers
+     source          1..4097
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="8"
+                     /map="8q24.3"
+                     /cell_line="WI38"
+                     /cell_type="fibroblast"
+                     /tissue_type="lung"
+     exon            35..203
+                     /number=1
+     gene            join(130..203,523..702,788..899,1113..1260,1338..1439,
+                     1533..1729,1812..2008,2121..2274,2442..2537,2688..2878,
+                     2972..3142,3281..3524)
+                     /gene="GPAA1"
+     CDS             join(130..203,523..702,788..899,1113..1260,1338..1439,
+                     1533..1729,1812..2008,2121..2274,2442..2537,2688..2878,
+                     2972..3142,3281..3524)
+                     /gene="GPAA1"
+                     /codon_start=1
+                     /product="glycosylphosphatidylinositol anchor attachment
+                     1"
+                     /protein_id="BAA82590.1"
+                     /db_xref="GI:5572755"
+                     /translation="MGLLSDPVRRRALARLVLRLNAPLCVLSYVAGIAWFLALVFPPL
+                     TQRTYMSENAMGSTMVEEQFAGGDRARAFARDFAAHRKKSGALPVAWLERTMRSVGLE
+                     VYTQSFSRKLPFPDETHERYMVSGTNVYGILRAPRAASTESLVLTVPCGSDSTNSQAV
+                     GLLLALAAHFRGQIYWAKDIVFLVTEHDLLGTEAWLEAYHDVNVTGMQSSPLQGRAGA
+                     IQAAVALELSSDVVTSLDVAVEGLNGQLPNLDLLNLFQTFCQKGGLLCTLQGKLQPED
+                     WTSLDGPLQGLQTLLLMVLRQASGRPHGSHGLFLRYRVEALTLRGINSFRQYKYDLVA
+                     VGKALEGMFRKLNHLLERLHQSFFLYLLPGLSRFVSIGLYMPAVGFLLLVLGLKALEL
+                     WMQLHEAGMGLEEPGGAPGPSVPLPPSQGVGLASLVAPLLISQAMGLALYVLPVLGQH
+                     VATQHFPVAEAEAVVLTLLAIYAAGLALPHNTHRVVSTQAPDRGWMALKLVALIYLAL
+                     QLGCIALTNFSLGFLLATTMVPTAALAKPHGPRTLYAALLVLTSPAATLLGSLFLWRE
+                     LQEAPLSLAEGWQLFLAALAQGVLEHHTYGALLFPLLSLGLYPCWLLFWNVLFWK"
+     intron          204..522
+                     /gene="GPAA1"
+                     /number=1
+     exon            523..702
+                     /gene="GPAA1"
+                     /number=2
+     intron          703..787
+                     /gene="GPAA1"
+                     /number=2
+     exon            788..899
+                     /gene="GPAA1"
+                     /number=3
+     intron          900..1112
+                     /gene="GPAA1"
+                     /number=3
+     exon            1113..1260
+                     /gene="GPAA1"
+                     /number=4
+     intron          1261..1337
+                     /gene="GPAA1"
+                     /number=4
+     exon            1338..1439
+                     /gene="GPAA1"
+                     /number=5
+     intron          1440..1532
+                     /gene="GPAA1"
+                     /number=5
+     exon            1533..1729
+                     /gene="GPAA1"
+                     /number=6
+     intron          1730..1811
+                     /gene="GPAA1"
+                     /number=6
+     exon            1812..2008
+                     /gene="GPAA1"
+                     /number=7
+     intron          2009..2120
+                     /gene="GPAA1"
+                     /number=7
+     exon            2121..2274
+                     /gene="GPAA1"
+                     /number=8
+     intron          2275..2441
+                     /gene="GPAA1"
+                     /note="Neither 5' nor 3' splice site follows GT-AG rule;
+                     This is a minor class intron (so-called AT-AC intron)."
+                     /number=8
+     exon            2442..2537
+                     /gene="GPAA1"
+                     /number=9
+     intron          2538..2687
+                     /gene="GPAA1"
+                     /number=9
+     exon            2688..2878
+                     /gene="GPAA1"
+                     /number=10
+     intron          2879..2971
+                     /gene="GPAA1"
+                     /number=10
+     exon            2972..3142
+                     /gene="GPAA1"
+                     /number=11
+     intron          3143..3280
+                     /gene="GPAA1"
+                     /number=11
+     exon            3281..3613
+                     /number=12
+ORIGIN      
+        1 tcgcgagcgt ctctgggacc ggaagtgcgg gcgagcgcgg gtccccgggt ctgacaggag
+       61 cagcctgtgg gcaccgcggc ggtagttgga ggcgggagag ggtccgtagc cgcgccgccc
+      121 tgccccgcca tgggcctcct gtcggacccg gttcgccggc gcgcgctcgc ccgcctagtg
+      181 ctgcgcctca acgcgccgtt gtggtgagga cagggcccgg ggaggcgggg acccgagggc
+      241 cctgggctcg cgccggcggc cccatgcgcg gtccccatcg agggccgggg ccgctccagc
+      301 tgctcgcgcc cctccggctg ctcgcgccct tccgctcctg ccctctggaa gcactgaggg
+      361 tatcaggccc aggcttaggg ctcgggtccg gcgtcccgat gcaggactcc gggtttaggt
+      421 ctcccagacc cgcgcgatcg accccgggtg cggaggttgt ggcctcgggt cggcgtctga
+      481 ggacccgctg acgctccggt gcccctccgt cctctctcac agcgtgctga gctacgtggc
+      541 gggcatcgcc tggttcttgg cgctggtttt cccgccgctg acccagcgca cttacatgtc
+      601 ggagaacgcc atgggctcca ccatggtgga ggagcagttt gcgggcggag accgtgcccg
+      661 ggcttttgcc cgggacttcg ccgcccaccg caagaagtcg gggtgagcgg cagagcaggg
+      721 cgtatggggc gagcagtggt ggctaaggcc ggggagctct gctcagaggc tcccttcgtg
+      781 tctgcagggc tctgccagtg gcctggcttg aacggacgat gcggtcagta gggctggagg
+      841 tctacacgca gagtttctcc cggaaactgc ccttcccaga tgagacccac gagcgctatg
+      901 tactggggga gtggggtgtg cctgggccca gaaagcacct tggagggagg ggtctgggct
+      961 gggtatcacc ttgcgggggt gtcatggggc caggaagctc agtgggaggg aaatccctgg
+     1021 tgggcactgg agggctagga aagttgtggg gggcccttca gccccctacc acaaagttac
+     1081 actgaggctc cccccaccga tgctgcatac agatggtgtc gggcaccaac gtgtacggca
+     1141 tcctgcgggc cccgcgtgct gccagcaccg agtcgcttgt gctcaccgtg ccctgtggct
+     1201 ctgactctac caacagccag gctgtggggc tgctgctggc actggctgcc cacttccggg
+     1261 gtgagtctca gggctgctgg ccgtggaggg gtttggtcag tgccccagac cctgctgatc
+     1321 ctgcttctgg cctccagggc agatttattg ggccaaagat atcgtcttcc tggtaacaga
+     1381 acatgacctt ctgggcactg aggcttggct tgaagcctac cacgatgtca atgtcactgg
+     1441 taggttctct tgtcctgcct gccctggtcc ccctctcagg gtcactgtcc tcaccacgtc
+     1501 ctccattagc actcattcac ttgctcctac aggcatgcag tcgtctcccc tgcagggccg
+     1561 agctggggcc attcaggcag ccgtggccct ggagctgagc agtgatgtgg tcaccagcct
+     1621 cgatgtggcc gtggaggggc ttaacgggca gctgcccaac cttgacctgc tcaatctctt
+     1681 ccagaccttc tgccagaaag ggggcctgtt gtgcacgctt cagggcaagg tggggctgcc
+     1741 tgcctgcctg agggctgaag ggcacagggt ctgtgggagg ggctgtctca tcctgtcctg
+     1801 cacctctaaa gctgcagccc gaggactgga catcattgga tggaccgctg cagggcctgc
+     1861 agacactgct gctcatggtt ctgcggcagg cctccggccg gccccacggc tcccatggcc
+     1921 tcttcctgcg ctaccgtgtg gaggccctaa ccctgcgtgg catcaatagc ttccgccagt
+     1981 acaagtatga cctggtggca gtgggcaagt aagtagtctc tggtcccccc tttccatgcc
+     2041 caggatgggg tctagctgga gcggagtggg ggatggcctg gtggctctgg ccagccgtga
+     2101 acctgcccca cacctgacag ggctttggag ggcatgttcc gcaagctcaa ccacctcctg
+     2161 gagcgcctgc accagtcctt cttcctctac ttgctccccg gcctctcccg cttcgtctcc
+     2221 atcggcctct acatgcccgc tgtcggcttc ttgctcctgg tccttggtct caagatatcc
+     2281 tctgcccctt gccatctacc tgtgaccagc ctccagtctc ctcaactcta ggctggggag
+     2341 agtcttccat cctgatgggg ggtggggtac gggggtgagc cctgggtccc cctctgggca
+     2401 gatcccgtta cacctcttgt tggggtcctt gattgggcta cgctctggaa ctgtggatgc
+     2461 agctgcatga ggctggaatg ggccttgagg agcccggggg tgcccctggc cccagtgtac
+     2521 cccttccccc atcacaggtg atggcacccc cttctgttgt tggaatgggc ttctggggtc
+     2581 tgactggtgt ttagtgttgc aacttagcct cagctggtgg gatggtggtg gtctttgggg
+     2641 atcccctggc cccagggtcc atctccaaga gcctgtgtgc cctgcagggt gtggggctgg
+     2701 cctcgctcgt ggcacctctg ctgatctcac aggccatggg actggccctc tatgtcctgc
+     2761 cagtgctggg ccaacacgtt gccacccagc acttcccagt ggcagaggct gaggctgtgg
+     2821 tgctgacact gctggcgatt tatgcagctg gcctggccct gccccacaat acccaccggt
+     2881 aagaggctgg gctggttgtt gggggcaggg gtagaggtcc cctggacatg cagacagctt
+     2941 gtgggttgcc tctgagtcct ttgtcttaca gggtggtaag cacacaggcc ccagacaggg
+     3001 gctggatggc actgaagctg gtagccctga tctacctagc actgcagctg ggctgcatcg
+     3061 ccctcaccaa cttctcactg ggcttcctgc tggccaccac catggtgccc actgctgcgc
+     3121 ttgccaagcc tcatgggccc cggtatgtat ggatcagccc cacttccccc aatgcctgtg
+     3181 ccctcatcac agaccgcacc ctcattcagt agccctttcc cccaacctgg tgcccatgcc
+     3241 cccaccatgg agcctacctt gatgttgctt ctccacccag gaccctctat gctgccctgc
+     3301 tggtgctgac cagcccggca gccacgctcc ttggcagcct gttcctgtgg cgggagctgc
+     3361 aggaggcgcc actgtcactg gccgagggct ggcagctctt cctggcagcg ctagcccagg
+     3421 gtgtgctgga gcaccacacc tacggcgccc tgctcttccc actgctgtcc ctgggcctct
+     3481 acccctgctg gctgcttttc tggaatgtgc tcttctggaa gtgagatctg cctgtccggg
+     3541 ctgggacaga gactccccaa ggaccccatt ctgcctcctt ctggggaaat aaatgagtgt
+     3601 ctgtttcagc agctatttga gctcctggcc cgctgtccgt gtagggcccc agggcatggg
+     3661 ggtgagaagc ctctgtctgc agggcttggc attcctcaca cctcctccct ggcaagggct
+     3721 gctgtagtcc acttactggg tagcattcct gccgaccagg gctctgctgc tgcatcaggt
+     3781 gcactctcag ccctggcggg tgccatgcag gctcagaggg ctgtgtgcat tgctctgtgg
+     3841 tactgtgcca ggagcggtgc tgggaaggag aatacaccat agccatggtt tgagggcctg
+     3901 ccaggagctg aggcacccag aaaccaccta acaccatctt tactgctagg actgaggctg
+     3961 gagctggagc cctgcagagg aggcccaggg tgcatggcat ggggcccagg caaggccatc
+     4021 gccttggtgt gggattggga tggagcaggg aaggagcacc cggcctggct tcctcagagt
+     4081 tgagtcagcc caggtga
+//
+LOCUS       AB007156                 607 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein S20, partial cds.
+ACCESSION   AB007156
+VERSION     AB007156.1  GI:3077751
+KEYWORDS    ribosomal protein S20.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 607)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..607
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="8"
+                     /note="STS map; D8S268-D8S260"
+     CDS             join(<1..29,453..>607)
+                     /codon_start=3
+                     /product="ribosomal protein S20"
+                     /protein_id="BAA25820.1"
+                     /db_xref="GI:3088340"
+                     /translation="KGPVRMPTKTLRITTRKTPCGEGSKTWDRFQMRIHKRLIDLHSP
+                     SEIVKQITSISIEPGV"
+     exon            <1..29
+                     /product="ribosomal protein S20"
+     intron          30..452
+     exon            453..>607
+                     /product="ribosomal protein S20"
+ORIGIN      
+        1 tgaaaggacc agttcgaatg cctaccaagg taaagtaaat cggaggggca ggaagtagga
+       61 gttgcttccg gatgttgcat aaattcaggt tctttaagga gttcggctgc ccaaaattgt
+      121 taacactgat gctgtctaca aacgcacata gaaatcggtg gtagattgcg gttcctagta
+      181 agtagctaat gtttagatat gattgttgaa ttattgttgc tgtgttcttg gtgtgcttng
+      241 gtgcttaaca ggcgcaagct ctaagggtgg tgtcctagca cagtgaaaac agacctggca
+      301 ttttcaaccc atggtacctg aaaatctatt agtgtaaatt ggaatcatac caaagggaaa
+      361 ctaatgaaat gattagaagt aatgattttc cagatgttct agggataagt ataaaacgat
+      421 aaacacttgg tttcctttgt cttttgttac agactttgag aatcactaca agaaaaactc
+      481 cttgtggtga aggttctaag acgtgggatc gtttccagat gagaattcac aagcgactca
+      541 ttgacttgca cagtccttct gagattgtta agcagattac ttccatcagt attgagccag
+      601 gagttga
+//
+LOCUS       AB007168                 747 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein L8, partial cds.
+ACCESSION   AB007168
+VERSION     AB007168.1  GI:3077763
+KEYWORDS    ribosomal protein L8.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 747)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..747
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="8"
+                     /note="STS map; D8S272-qter"
+     CDS             join(<1..128,206..347,625..>747)
+                     /codon_start=3
+                     /product="ribosomal protein L8"
+                     /protein_id="BAA25829.1"
+                     /db_xref="GI:3088346"
+                     /translation="IRGQRKGAGSVFRAHVKHRKGAARLRAVDFAERHGYIKGIVKDI
+                     IHDPGRGAPLAKVVFRDPYRFKKRTELFIAAEGIHTGQFVYCGKKAQLNIGNVLPVGT
+                     MPEGTIVCCLEEKPGDRGKLARASGNYA"
+     exon            <1..128
+                     /product="ribosomal protein L8"
+     intron          129..205
+     exon            206..347
+                     /product="ribosomal protein L8"
+     intron          348..624
+     exon            625..>747
+                     /product="ribosomal protein L8"
+ORIGIN      
+        1 tgatccgtgg acagaggaag ggcgccgggt ctgtgttccg cgcgcacgtg aagcaccgta
+       61 aaggcgctgc gcgcctgcgc gccgtggatt tcgctgagcg gcacggctac atcaagggca
+      121 tcgtcaaggt gcggaacgct ggccggggcg ggaggggaag ggacgcccgg ccggaacgcc
+      181 gcactcacgc cgcctctgcc cacaggacat catccacgac ccgggccgcg gcgcgcccct
+      241 cgccaaggtg gtcttccggg atccgtatcg gtttaagaag cggacggagc tgttcattgc
+      301 cgccgagggc attcacacgg gccagtttgt gtattgcggc aagaagggtt agcatcgcgg
+      361 cggggaagga aggtcggggt ggggaggggt ctgggtgttg cctgaggagt taacgtccta
+      421 agccgatatg ggaacctcgc aggcagaagc ttcaggtggg gacatccgcg tggccagacc
+      481 agtggccacc ggtgggtgcc gagagagttg taccgggagg ctggatgttg aatgctgtgc
+      541 tcgcaacttc gcgggttgcc tagagcgagg gggttcgcat tgtttcttac tgtgctgacg
+      601 gcctgatgct gcttcccctt gcagcccagc tcaacattgg caatgtgctc cctgtgggca
+      661 ccatgcctga gggtacaatc gtgtgctgcc tggaggagaa gcctggagac cgtggcaagc
+      721 tggcccgggc atcagggaac tatgcca
