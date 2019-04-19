@@ -1,4 +1,3 @@
-//
 LOCUS       AB002137                4097 bp    DNA     linear   PRI 28-JUN-2008
 DEFINITION  Homo sapiens GPAA1 gene for glycosylphosphatidylinositol anchor
             attachment 1, complete cds.
