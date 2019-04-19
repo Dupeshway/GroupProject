@@ -9,7 +9,9 @@ Open mysql and run the following sql files:
 
 1. CHROMA8_DB.sql (This will build your table)
 
-2. Next populate your database by running the following files:\n
+2. Next populate your database by running the following files:
+
+
     acc_no.sql (Accession numbers)
     gene_id.sql (gene_id, indexed by Accession numbers)
     
