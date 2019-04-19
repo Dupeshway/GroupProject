@@ -22,7 +22,7 @@ import pymysql.cursors
 
 # Set parameters
 dbname   = "ly001"
-dbhost   = "ssh.cryst.bbk.ac.uk"
+dbhost   = "ssh.cryst.bbk.ac.uk" #Replace ssh with hope when working from nomachine
 dbuser   = "ly001"   # Ask a demonstrator
 dbpass   = "7#b8tpkum"   # Ask a demonstrator
 port     = 3306
