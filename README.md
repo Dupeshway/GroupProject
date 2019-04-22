@@ -15,5 +15,7 @@ Open mysql and run the following sql files:
     
     ii) gene_parse.sql (GENE_id, indexed by Accession numbers, some records dont have Gene_id)
     
-    iii) sql_dna_seq.sql (DNA sequence)
+    iii) parse_chrom_loc.sql (Chromosome location, indexed by Accession number, some records dont have chromosome location)
+    
+    iv) sql_dna_seq.sql (DNA sequence: this is proving to be tougher to get working)
 
