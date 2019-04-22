@@ -7,7 +7,7 @@ Documentation: (creating your database)
 
 Open mysql and run the following sql files:
 
-1. CHROMA8_DB.sql (This will build your table)
+1. CHROM8.sql (This will build your table)
 
 2. Next populate your database by running the following files in mysql:
 
