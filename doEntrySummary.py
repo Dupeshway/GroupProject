@@ -17,7 +17,7 @@ import configFile
 """
 
 def doEntrySummary(input_type, input_value):
-     """ Input values and type if in infoList reutuen listed in database 
+     """ Input values and type if in infoList return listed in database 
                input_type= 
                input_value= """
      if input_type in infoList:
