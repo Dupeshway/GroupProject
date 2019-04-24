@@ -21,3 +21,8 @@ Open mysql and run the following sql files:
     
     iv) sql_dna_seq.sql (DNA_SEQUENCE: this is proving to be tougher to get working)
 
+
+
+Notes:
+
+Resolved to combine 2 files(raw_acc_no.sql, dna_seq.sql) with alternating lines using linux terminal command: $ paste -d \\n raw_acc_no.sql dna_seq.sql > acc_dna_seq.txt
