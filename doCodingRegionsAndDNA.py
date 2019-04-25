@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
 #from database_layer import db_query
+"""
+Program:Coding Regions And DNA
+File:
+Version:
+Date:
+Author: Margherita Martorana, Documentation(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description:
+--------------------------------------------------------------------------
+Usage: Import from the database layer
+--------------------------------------------------------------------------
+Import libraries: configFile
+import configFile
+"""
 import configFile
 
 def doCodingRegionsAndDNA(input_type, input_value):
