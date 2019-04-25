@@ -11,13 +11,15 @@ Open mysql and run the following sql files:
 
 2. Next populate your database by running the following files in mysql:
 
-    i) sql_dna_seq.sql (ACCESSION AND DNA_SEQUENCE: this is proving to be tougher to get working)
+    i) acc_no.sql (ACCESSION number)
     
     ii) gene_parse.sql (GENE_ID, indexed by Accession numbers, some records dont have Gene_id)
     
     iii) product_parse.sql (PRODUCT_NAME, Protein product name, some records dont have or use multiple)
     
     iv) parse_chrom_loc.sql (CHROM_LOC, Chromosome location, indexed by Accession number)
+    
+    v) sql_dna_seq.sql (DNA_SEQUENCE indexed by ACCESSION)
     
 
 
