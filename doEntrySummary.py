@@ -19,6 +19,10 @@ import configFile
 def doEntrySummary(input_type, input_value):
      """ Input values and type if in infoList return listed in database 
                input_type= 
+                    infoType1 = 'gene_id'
+                    infoType2 = 'acc_number'
+                    infoType3 = 'product_name'
+                    infoType4 = 'chr_location'
                input_value= """
      if input_type in infoList:
           return db_query('(*)', input_type, input_value)
