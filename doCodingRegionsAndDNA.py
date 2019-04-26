@@ -22,6 +22,10 @@ import configFile
 def doCodingRegionsAndDNA(input_type, input_value):
      """ Function for DNA coding Resgion and DNA
           input_type=
+               infoType1 = 'gene_id'
+               infoType2 = 'acc_number'
+               infoType3 = 'product_name'
+               infoType4 = 'chr_location'
           input_value=
           returnsequenceDNA if in list
           
