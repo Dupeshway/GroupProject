@@ -19,6 +19,8 @@ import configFile
 
 import configFile
 
+""" Coding Regiona and DNA Function"""
+
 def doCodingRegionsAndDNA(input_type, input_value):
      """ Function for DNA coding Resgion and DNA
           input_type=
