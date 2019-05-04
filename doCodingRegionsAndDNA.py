@@ -19,18 +19,11 @@ import configFile
 
 import configFile
 
-""" Coding Regiona and DNA Function"""
 
 def doCodingRegionsAndDNA(input_type, input_value):
-     """ Function for DNA coding Resgion and DNA
-          input_type=
-               infoType1 = 'gene_id'
-               infoType2 = 'acc_number'
-               infoType3 = 'product_name'
-               infoType4 = 'chr_location'
-          input_value=
-          returnsequenceDNA if in list
-          
+     """ Coding Regiona and DNA Function
+          input: type and value for query 
+          output: sequence DNA for type and value
           """
      if input_type in infoList:
           sequenceDNA = db_query(dbArg1, input_type, input_value)
