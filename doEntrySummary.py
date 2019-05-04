@@ -2,7 +2,7 @@
 #from database_layer import db_query
 """
 Program:Import query from the database layer
-File:
+File:doEntrySummary.py
 Version:
 Date:
 Author: Margherita Martorana, Documentation(Jeff Li)
@@ -18,8 +18,10 @@ import configFile
 
 import configFile
 
+""" Entry Summary Function """
+
 def doEntrySummary(input_type, input_value):
-          """  Function  for Entry Summary
+          """  Pull from database layer for database query
                input_type= 
                     infoType1 = 'gene_id'
                     infoType2 = 'acc_number'
