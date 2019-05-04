@@ -21,6 +21,7 @@ Open mysql and run the following sql files:
     
     v) sql_dna_seq.sql (DNA_SEQUENCE indexed by ACCESSION)
     
+    vi) sql_trans_parse.sql (TRANSLATION, Protein translation, amino acid sequence, indexed by ACCESSION)
 
 
 Notes:
