@@ -3,8 +3,8 @@
 
 """
 Program:Coding Regions And DNA
-File:
-Version:
+File:doCodingRegionsAndDNA.py
+Version:1.0
 Date:
 Author: Margherita Martorana, Documentation(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
