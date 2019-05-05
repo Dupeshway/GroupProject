@@ -27,7 +27,7 @@ from selenium.webdriver.common.keys import Keys
 class FronTendSearch(unittest.TestCase):
 
 Gene_id = ""
-Protein_product_names = ""
+Protein_product = ""
 Accession_number = ""
 Chromosomal location = ""
 
@@ -40,14 +40,14 @@ Chromosomal location = ""
             Ouput Search pass or not"""
         driver = self.driver
         driver.get(" http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/wc005/cgi_script.py")
-        self.assertIn("Gene_Header ", driver.title)
-        elem = driver.find_element_by_id("Gene")
-        elem.send_keys(Gene_id_code)
-        elem = driver.find_element_by_id("Protein")
-        elem.send_keys(Protein product names)
-        elem = driver.find_element_by_id("Accession")
+        self.assertIn("Gene Database Project ", driver.title)
+        elem = driver.find_element_by_id("Gene Indentifier")
+        elem.send_keys(Gene_id)
+        elem = driver.find_element_by_id("Protein product names")
+        elem.send_keys(Protein_product)
+        elem = driver.find_element_by_id(" GeneBank accession number")
         elem.send_keys(Accession_number)
-        elem = driver.find_element_by_id("Chromosomal")
+        elem = driver.find_element_by_id("Chromosomal location ")
         elem.send_keys(Chromosomal location )
         elem.send_keys(Keys.RETURN)
         assert "No results found." not in driver.page_source
