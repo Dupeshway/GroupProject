@@ -12,7 +12,10 @@ Description:selenium To test front end code
 --------------------------------------------------------------------------
 Usage: Used selenium to check URL and search on the webpage
 --------------------------------------------------------------------------
-Import libraries: selenium
+Import libraries:
+import unittest
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 """
 
 
