@@ -2,17 +2,33 @@
 
 #Yobi Livingstone
 
+"""
+Program:Cleaning Data
+File:cleaning_data.py
+Version:1.0
+Date:May-4-2019
+Author: Yobi Livingstone, Documentation headers(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description: 
+--------------------------------------------------------------------------
+Usage: 
+--------------------------------------------------------------------------
+Import libraries: re
+"""
 import re
-
 from config import config as cg
 from file_management import file_management as fm
 from cleaning_data import clean_data as cl
 
+"""Clear Parse Module"""
+
 class parse_data:
 
+""" Full DNA Sequence"""
 
         def parse_prot_trans(datafile):
-            '''This function camptures the full dna sequence #KEEP WORKING ON THIS
+            ''' This function camptures the full dna sequence #KEEP WORKING ON THIS
             input: strings of each line in text file
             ouput: return captured dna seq numbers
             '''        
@@ -71,6 +87,7 @@ class parse_data:
             return prod_trans
  
 
+"""Parse Protein Name"""
 
     def parse_product_name(datafile):
         '''Captures the protein product name from a Genbank file
@@ -102,8 +119,9 @@ class parse_data:
                         prod_count+=1
                         acc_count=0
 
-        return cl.remove_apost(pro_prod) #removing apostraphes and whitespaces
+   return cl.remove_apost(pro_prod) #removing apostraphes and whitespaces
 
+"""Acession Number Parse"""
 
     def simpleparse_acc_no(datafile):
         '''This function is to capture lines that begin
@@ -122,7 +140,6 @@ class parse_data:
 
         return acc_no
 
-
     def parse_acc_no(datafile):
         '''This function is to capture lines that begin
         with the string: Accession
@@ -139,7 +156,7 @@ class parse_data:
                 acc_no += "replace into CHROM8(ACCESSION) VALUES('"+i[12:20]+"');\n"
 
         return acc_no
-
+        """ FULL DNA SEQ"""
     def parse_dna_seq(datafile):
         '''This function camptures the full dna sequence
         input: strings of each line in text file
