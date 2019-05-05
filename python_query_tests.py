@@ -2,12 +2,12 @@
 
 #basic python wrapper for SQL queries
 '''
-Program:
-File:
-Version:
-Date:
+Program:Wrapper for SQL queries
+File:python_query_tests.py
+Version:1.0
+Date:May-4-2019
 Function: to wrap SQL queries in python language
-Author: Yobi Livingstone
+Author: Yobi Livingstone, Documentaiton Header(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
 Description:
@@ -17,6 +17,7 @@ Usage:
 Revision History:
 --------------------------------------------------------------------------
 Import libraries
+import pymysql.cursors
 '''
 import pymysql.cursors
 
@@ -30,6 +31,7 @@ port     = 3306
 
 # Create search function
 def search_function(output_type, input_type, input_value):
+  """ Search Function"""
   sql = "select" + output_type + "where" + input_type + " == " + input_value   
 
 # Connect to the database
