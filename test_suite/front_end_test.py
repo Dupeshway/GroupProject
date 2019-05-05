@@ -1,7 +1,7 @@
 """
 Program:Test Suite Front End
 File:front_end_test.py
-Version:1>0
+Version:1.0
 Date:May-4-2019
 Function: 
 Author: Jeff Li
