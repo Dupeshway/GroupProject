@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Program:Test Suite Front End
 File:front_end_test.py
@@ -7,9 +8,9 @@ Function:
 Author: Jeff Li
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: To test front end code
+Description:selenium To test front end code
 --------------------------------------------------------------------------
-Usage: Check URL and search on the webpage
+Usage: Used selenium to check URL and search on the webpage
 --------------------------------------------------------------------------
 Import libraries: selenium
 """
