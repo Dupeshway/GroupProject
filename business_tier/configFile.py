@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-infoType1 = 'gene_id'
-infoType2 = 'acc_number'
-infoType3 = 'product_name'
-infoType4 = 'chr_location'
+dbArg1 = 'ACCESSION'
+dbArg2 = 'CHROM_LOC'
+dbArg3 = 'GENE_ID'
+dbArg4 = 'PRODUCT_NAME'
+dbArg5 = 'TRANSLATION'
+dbArg6 = 'CDS_REGIONS'
+dbArg7 = 'DNA_SEQUENCE'
 
-infoList = [infoType1, infoType2, infoType3, infoType4]
 
-dbArg1 = 'dna_seq'
-dbArg2 = 'coding_regions'
+cds_start_char = '<'
+cds_end_char  = '>'
