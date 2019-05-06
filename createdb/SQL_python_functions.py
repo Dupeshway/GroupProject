@@ -2,10 +2,10 @@
 
 
 """
-Program:Cleaning Data
-File:cleaning_data.py
+Program:SQL Python Functions
+File:SQL_python_functions.py
 Version:1.0
-Date:May-4-2019
+Date:May-6-2019
 Author: Yobi Livingstone, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
