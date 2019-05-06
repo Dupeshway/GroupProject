@@ -4,7 +4,7 @@
 Program:Obtain Chromosome Location
 File:getLocationCDS.py
 Version:1.0
-Date:May-4-2019
+Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
@@ -18,6 +18,7 @@ def getLocationCDS(input_value, input_value):
           """Getting Protein Product Name Function
      Input: input type and vaule in cofig 
      Output:Protein Chromosome Location
+     from Database
      """
      cds_location = getDataFromDB(dbArg6, input_value, output_value)
      return cds_location
