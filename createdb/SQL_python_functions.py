@@ -9,10 +9,9 @@ Date:May-6-2019
 Author: Yobi Livingstone, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Functions to clean raw data 
+Description: Functions to perfrom query in the database
 --------------------------------------------------------------------------
-Usage: For processing data to the bussiness layer to make it consistent
-and easier to handle.
+Usage: For Database Query and setting up database summary
 --------------------------------------------------------------------------
 Import libraries: import pymysql.cursors
 """
