@@ -9,12 +9,13 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton to process start CDS region
+Description: Function to process start CDS region
 --------------------------------------------------------------------------
 Import libraries:
 import re
 import getLocationCDS
 """
+
 import re
 import getLocationCDS
 
