@@ -9,7 +9,7 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton to process select CDS region
+Description: Function to process select CDS region
 --------------------------------------------------------------------------
 Import libraries:
 import getStartCDS
