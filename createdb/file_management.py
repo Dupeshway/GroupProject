@@ -8,9 +8,9 @@ Date:May-4-2019
 Author: Yobi Livingstone, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: 
+Description: Mangaing filrd in the Database layer
 --------------------------------------------------------------------------
-Usage: 
+Usage: Parsing through files in the database
 --------------------------------------------------------------------------
 Import libraries:
 """
