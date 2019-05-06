@@ -8,18 +8,17 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton to getting Chromosome Location from the database
+Description: Function to getting Chromosome Location from the database
 --------------------------------------------------------------------------
-Import libraries: import getDataFromDB
+Import libraries: 
+from SQL_python_functions import db_query
+from configFile import *
 """
-import getDataFromDB
+from SQL_python_functions import db_query
+from configFile import *
 
-def getLocationCDS(input_value, input_value):
-          """Getting CDS Location Function from database layer
-     Input: input type and vaule in cofig 
-     Output:CDS Location
-     from Database
-     """
-     cds_location = getDataFromDB(dbArg6, input_value, output_value)
+def getLocationCDS(input_type, input_value):
+     cds_location = db_query(dbArg6, input_value, output_value)
+     
      return cds_location
 
