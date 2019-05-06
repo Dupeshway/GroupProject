@@ -8,7 +8,7 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton to process Amino Acid and CDS
+Description: Function to process Amino Acid and CDS
 --------------------------------------------------------------------------
 imported Libraries:
 import getStartCDS
