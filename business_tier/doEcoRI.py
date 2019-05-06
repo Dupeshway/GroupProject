@@ -9,7 +9,7 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton to process DNA sequence with restriciton enzyme ecoRI
+Description: Function to process DNA sequence with restriciton enzyme ecoRI
 --------------------------------------------------------------------------
 from configFile import *
 import re
