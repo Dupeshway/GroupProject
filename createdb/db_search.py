@@ -1,4 +1,19 @@
 #!/usr/bin/env python3
+
+"""
+Program:Database search 
+File:db_search.py
+Version:1.0
+Date:May-6-2019
+Author: Yobi Livingstone, Documentation headers(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description: Database Seacrh 
+--------------------------------------------------------------------------
+Usage: Connection to the SQL database to perform search
+--------------------------------------------------------------------------
+Import libraries: import pymysql.cursors
+"""
 import pymysql.cursors
 
 from SQL_python_functions import sql_query as sq
