@@ -10,9 +10,10 @@ Date:May-4-2019
 Author: Yobi Livingstone, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Cleaning Raw data to make data easier to handle
+Description: Functions to clean raw data 
 --------------------------------------------------------------------------
-Usage: 
+Usage: For processing data to the bussiness layer to make it consistent
+and easier to handle.
 --------------------------------------------------------------------------
 Import libraries: re
 """
@@ -39,18 +40,18 @@ class clean_data:
 """ CDS Cleaning """
 
     def clean_cds_region(raw_data):
-        """ Cleaning
+        """ Cleaning CDS region
         input: raw_data clean data
-        output: raw_data raw data
+        output: cleaned raw data
         """
         raw_data=str(raw_data)
         clean_data=re.sub('[join()<>+{}]','', raw_data)
         return clean_data
 
     def clean_cds_loc(raw_data):
-        """ Cleaning
+        """ Cleaning cds location
         input: raw_data clean data 
-        output: raw_data i removed
+        output: raw_data with i removed
         """
         dirt = ('j','o','i','n','{','}','(',')','+','[',']')
         for i in raw_data:
