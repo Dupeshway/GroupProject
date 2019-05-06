@@ -1,13 +1,34 @@
+
+"""
+Program:SQL Format Functions
+File:SQL_format.py
+Version:1.0
+Date:May-6-2019
+Author: Yobi Livingstone, Documentation headers(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description: SQL format function parsing
+--------------------------------------------------------------------------
+Usage: Parse for cds,pot-translation, DNA Seq, Gene Id, and Chromose Location
+--------------------------------------------------------------------------
+Import libraries: 
+import re
+from config_db import config as cg
+from file_management import file_management as fm
+from parse_genfile import parse_data as pd 
+from cleaning_data import clean_data as cl
+"""
+
 import re
 from config_db import config as cg
 from file_management import file_management as fm
 from parse_genfile import parse_data as pd 
 from cleaning_data import clean_data as cl
 
+"""SQL Format Module"""
 
 class sql_format:
-
-
+    """SQL Parse CDS funciton for Data file"""
     def sql_parse_cds(datafile):
         '''This function converts the output of parse_cds(),
         input: text file with accession number and protein trnaslation in alternating lines
@@ -35,7 +56,7 @@ class sql_format:
                     acc_count=0
             
         return (clean_data)
-
+    """ SQL parse pot-translation datafile"""
     def sql_parse_prot_trans(datafile):
         '''This function converts the output of parse_prot_trans(),
         input: text file with accession number and protein trnaslation in alternating lines
@@ -64,7 +85,7 @@ class sql_format:
             
         return (clean_data)
 
-
+    """SQL Parse DNA Seq datafile"""
     def sql_parse_dna_seq(datafile):
         '''Convert data into an SQL table insertion
         input: file with each dna seq on a seperate line
@@ -92,7 +113,7 @@ class sql_format:
             
         return (clean_data)
 
-
+    """Parse Gene Id from data file"""
     def parse_gene_id(datafile):
         '''Capture one copy of feature in each record of genbank file
         input: Genbank record
@@ -126,7 +147,7 @@ class sql_format:
         return cl.remove_apost(gene_id) #removing apostraphes and whitespaces
 
 
-
+    """ Parse Chromose Location"""
     def parse_chrom_loc(datafile):
         '''Capture one copy of feature in each record of genbank file
         input: Genbank record
