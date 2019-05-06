@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #from database_layer import db_query
 """
-Program:Obtain Chromosome Location
+Program:Obtain CDS Location
 File:getLocationCDS.py
 Version:1.0
 Date:May-5-2019
@@ -15,9 +15,9 @@ Import libraries: import getDataFromDB
 import getDataFromDB
 
 def getLocationCDS(input_value, input_value):
-          """Getting Protein Product Name Function
+          """Getting CDS Location Function from database layer
      Input: input type and vaule in cofig 
-     Output:Protein Chromosome Location
+     Output:CDS Location
      from Database
      """
      cds_location = getDataFromDB(dbArg6, input_value, output_value)
