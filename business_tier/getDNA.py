@@ -8,16 +8,16 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton for getting DNA Sequence from the database
+Description: Function for getting DNA Sequence from the database
 --------------------------------------------------------------------------
-Import libraries: import getDataFromDB
+Import libraries: 
+from SQL_python_functions import db_query
+from configFile import *
 """
-import getDataFromDB
+from SQL_python_functions import db_query
+from configFile import *
 
 def getDNA(input_type, input_value):
-     """Getting DNA Sequence Name Function
-     Input: input type and vaule in cofig 
-     Output: DNA Sequence
-     """
-     dna_sequence = getDataFromDB(dbArg7, input_type, input_value)
+     dna_sequence = db_query(dbArg7, input_type, input_value)
+     
      return dna_sequence
