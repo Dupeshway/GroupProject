@@ -8,7 +8,7 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Funciton to Process Coordine ends from the CDS location
+Description: Function to Process Coordine ends from the CDS location
 --------------------------------------------------------------------------
 Import libraries:
 import re
