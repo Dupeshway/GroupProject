@@ -4,7 +4,7 @@
 Program:Obtain Protein Product Name
 File:getProductName.py
 Version:1.0
-Date:May-4-2019
+Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
