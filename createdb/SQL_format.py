@@ -1,11 +1,40 @@
 import re
-from config import config as cg
+from config_db import config as cg
 from file_management import file_management as fm
-from new_parse import parse_data as pd 
+from parse_genfile import parse_data as pd 
 from cleaning_data import clean_data as cl
 
 
 class sql_format:
+
+
+    def sql_parse_cds(datafile):
+        '''This function converts the output of parse_cds(),
+        input: text file with accession number and protein trnaslation in alternating lines
+        output: returns an SQL format insertion for a database
+        '''
+        count=0
+        raw_data=[]
+        clean_data=''
+        acc_data=[]
+        acc_count=0
+        cds_count=1
+
+        with open(datafile, 'r') as f:
+            raw_data+=f.readlines()
+            for line in raw_data:
+
+                if acc_count==0:
+                    clean_data+= "INSERT into CHROM8(ACCESSION, CDS_REGIONS) values ("+cl.clean_lines("'"+line+"',")
+                    acc_count+=1
+                    cds_count=0
+
+                elif cds_count==0:
+                    clean_data+= cl.clean_lines("'"+line+"')ON DUPLICATE KEY UPDATE CDS_REGIONS = '"+line+"';")+"\n"
+                    cds_count+=1
+                    acc_count=0
+            
+        return (clean_data)
 
     def sql_parse_prot_trans(datafile):
         '''This function converts the output of parse_prot_trans(),
