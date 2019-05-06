@@ -3,18 +3,23 @@
 #Yobi Livingstone
 
 """
-Program:Cleaning Data
-File:cleaning_data.py
+Program:Parsing Genebank File
+File:parse_genfile.py
 Version:1.0
 Date:May-4-2019
 Author: Yobi Livingstone, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: 
+Description: Parsing genebank file
 --------------------------------------------------------------------------
-Usage: 
+Usage: Parsing through Protein name, accesion number, DNA seq in GeneBank
+to enable queries.
 --------------------------------------------------------------------------
-Import libraries: re
+Import libraries: 
+import re
+from config import config as cg
+from file_management import file_management as fm
+from cleaning_data import clean_data as cl
 """
 import re
 from config import config as cg
@@ -156,7 +161,7 @@ class parse_data:
                 acc_no += "replace into CHROM8(ACCESSION) VALUES('"+i[12:20]+"');\n"
 
         return acc_no
-        """ FULL DNA SEQ"""
+""" FULL DNA SEQ"""
     def parse_dna_seq(datafile):
         '''This function camptures the full dna sequence
         input: strings of each line in text file
