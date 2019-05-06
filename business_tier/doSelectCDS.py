@@ -1,11 +1,32 @@
 #!/usr/bin/env python3
 #from database_layer import db_query
+
+"""
+Program:Select CDS
+File:doSelectCDS.py
+Version:1.0
+Date:May-5-2019
+Author: Margherita Martorana, Documentation headers(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description: Funciton to process select CDS region
+--------------------------------------------------------------------------
+Import libraries:
+import getStartCDS
+import getEndCDS
+import getDNA
+import re
+"""
+
 import getStartCDS
 import getEndCDS
 import getDNA
 import re
 
 def doSelectCDS(input_type, input_value):
+      """ Process select CDS from the getLocationCDS
+     Input: input type and vaule in cofig 
+     Output:CDS select Coordinate """
      start_cds = getStartCDS(input_type, input_value)
      end_CDS = getEndCDS(input_type, input_value)
      dna_sequence = getDNA(input_type, input_value)
