@@ -26,11 +26,11 @@ class sql_query:
 
 
 
-        def db_summary(accession_no):
+        def db_summary(output_type):
                 '''select (*)
                 Returning entire record assoiciated with Accession no.
                 '''
-                sql="select * from CHROM8 where ACCESSION='"+accession_no+"'"
+                sql="select "+output_type+" from CHROM8"
                 cursor = db.cursor()
                 data  = cursor.execute(sql)
                 output_value   = cursor.fetchall()
