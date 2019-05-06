@@ -2,9 +2,9 @@
 #from database_layer import db_query
 """
 Program:Obtain chromosomal location Name
-File:getProductName.py
+File:getChrLocation.py
 Version:1.0
-Date:May-4-2019
+Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
@@ -15,9 +15,9 @@ Import libraries: import getDataFromDB
 import getDataFromDB
 
 def getChrLocation(input_type, input_value):
-     """Getting chromosomal location Name Function
+     """Getting chromosomal location Function
      Input: input type and vaule in cofig 
-     Output:Protein Product Name
+     Output:chromosomal location
      """
      chromosomal_location = getDataFromDB(dbArg2, input_type, input_value)
      return chromosomal_location
