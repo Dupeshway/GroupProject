@@ -21,8 +21,8 @@ import re
 """Processed Sequence with BsuMI"""
 def doBsuMI(seq):
      """ Process Sequence with restriction enzyme BsuMI
-     Input: input BsuMI from cofigfile 
-     Output:Sequence processes with BsuMI """
+     Input: Raw DNA Sequence 
+     Output:DNA process with BamHI"""
      f = re.compile(r'' + bsuMI_forward + '')
      r = re.compile(r'' + bsuMI_reverse + '')
      seq = f.sub(bsuMI_forward[0] + bsuMI_char + \
