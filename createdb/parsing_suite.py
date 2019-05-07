@@ -62,7 +62,7 @@ fm.write_file(sf.sql_parse_cds(cg.cds_file), cg.sql_cds_file)
 #Parse DNA_SEQUENCE (RAW DATA)
 #***WARNING: THIS TAKES UPWARDS OF 3HRs to PARSE (CPU: i5 quad-core)***
 fm.wipe_file(cg.dna_file)
-print('Please be prepared to wait')
+print('Please be prepared to wait for PARSING the DNA SEQUENCE')
 fm.write_file(pd.parse_dna_seq(cg.r_file), cg.dna_file)
 #WRITES TO: dna_file = 'parsed_dna_seq.txt'
 
