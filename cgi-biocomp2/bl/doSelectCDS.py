@@ -13,8 +13,8 @@ Description: Function to process select CDS region
 --------------------------------------------------------------------------
 Import libraries:
 from config import config as cg
-import getStartCDS
-import getEndCDS
+import doStartCDS
+import doEndCDS
 import getDNA
 import re
 """
