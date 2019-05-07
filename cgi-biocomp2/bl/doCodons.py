@@ -17,7 +17,11 @@ from configFile import *
 from SQL_python_functions import *
 import re
 import doCodonDictionary
-from configFile import *
+from config import config as cg
+import sys
+
+sys.path.insert(0, '../')
+sys.path.insert(0, '../db/')
 
 """ Process codon of DNA Sequence""" 
 def doCodons(dna_sequence):
@@ -25,10 +29,10 @@ def doCodons(dna_sequence):
      input: dna sequence
      output: Codon for DNA seq"""
      p = re.compile(r'[ATCG]{3}')
-     dna_sequence = db_query(dbArg7, input_type, input_value)
+     dna_sequence = db_query(cg.dbArg7, input_type, input_value)
 
-     for i in range(0, len(dna_sequence), codon_length):
-          codon = dna_sequence[i:(i+codon_length)]
+     for i in range(0, len(dna_sequence), cg.codon_length):
+          codon = dna_sequence[i:(i+cg.codon_length)]
           if p.match(codon):
 
                return codon
