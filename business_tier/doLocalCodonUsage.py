@@ -1,9 +1,29 @@
 #!/usr/bin/env python3
+
+"""
+Program:Local Codon Usage
+File:doLocalCodonUsage.py
+Version:1.0
+Date:May-7-2019
+Author: Margherita Martorana, Documentation headers(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description: Function to process Local Codon usage
+--------------------------------------------------------------------------
+from SQL_python_functions import *
+import re
+import doCodonDictionary
+from configFile import *
+"""
+
 from SQL_python_functions import *
 import doCodons
 import doCodonDictionary
 
 def doLocalCodonUsage(input_type, input_value):
+     """ Process Coordinate ends from the Local codon usage
+     Input: input type and value in config file
+     Output: count for codons"""
      d = doCodonDictionary
      dna_sequence = db_query(dbArg7, input_type, input_value)
      codon_count = 0
