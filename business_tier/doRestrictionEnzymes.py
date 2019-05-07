@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #from database_layer import db_query
 """
-Program:Start CDS
-File:doStartCDS.py
+Program:Processed with Restriciton Enzyme
+File:doRestrictionEnzymes.py
 Version:1.0
 Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
