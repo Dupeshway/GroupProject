@@ -20,8 +20,8 @@ import re
 """
 
 from config import config as cg
-import getStartCDS
-import getEndCDS
+import doStartCDS
+import doEndCDS
 import getDNA
 import sys
 
@@ -32,8 +32,8 @@ def doSelectCDS(input_type, input_value):
       """ Process select CDS from the getLocationCDS
      Input: input type and value in config 
      Output:selected DNA Coordinate """
-     start_cds = getStartCDS(input_type, input_value)
-     end_CDS = getEndCDS(input_type, input_value)
+     start_cds = doStartCDS(input_type, input_value)
+     end_CDS = doEndCDS(input_type, input_value)
      dna_sequence = getDNA(input_type, input_value)
 
      dna_selected_cds = ''
