@@ -21,7 +21,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-""" Getting Chomosome Locaiton"""
+#""" Getting Chomosome Locaiton"""
 def getChrLocation(input_type, input_value):
      """ Function to obtain Chromosome Location from the database
      input: database query Arg2, type, and value from the config file
