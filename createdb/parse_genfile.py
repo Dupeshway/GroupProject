@@ -33,7 +33,7 @@ class parse_data:
 """ Full DNA Sequence"""
 
         def parse_prot_trans(datafile):
-            ''' This function camptures the full dna sequence #KEEP WORKING ON THIS
+            ''' This function captures the full dna sequence 
             input: strings of each line in text file
             ouput: return captured dna seq numbers
             '''        
