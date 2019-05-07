@@ -6,7 +6,7 @@ Program:SQL Python Functions
 File:SQL_python_functions.py
 Version:1.0
 Date:May-6-2019
-Author: Yobi Livingstone, Documentation headers(Jeff Li)
+Author: Yobi Livingstone, Margharita Martorama. Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
 Description: Functions to perfrom query in the database
