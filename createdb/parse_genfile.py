@@ -30,11 +30,11 @@ from cleaning_data import clean_data as cl
 
 sys.path.insert(0, '../cgi-biocomp2/')
 
-"""Clear Parse Module"""
+#"""Clear Parse Module"""
 
 class parse_data:
 
-""" PARSING CDS"""
+#""" PARSING CDS"""
 
         def parse_cds(datafile):
             '''This function captures the CDS region in a genbank file
@@ -95,7 +95,7 @@ class parse_data:
             cds_data= cl.clean_cds_region(cds_data)
             return cl.hyphenise(cds_data)
 
-""" PARSING PROTEIN TRANSLATION"""
+#""" PARSING PROTEIN TRANSLATION"""
         def parse_prot_trans(datafile):
             '''This function camptures the full dna sequence #KEEP WORKING ON THIS
             input: text file in genbank format
@@ -156,7 +156,7 @@ class parse_data:
             return prod_trans
  
 
-""" PARSING PRODUCT NAME"""
+#""" PARSING PRODUCT NAME"""
         def parse_product_name(datafile):
             '''Captures the protein product name from a Genbank file
             input: chromosomal data file (genbank)
@@ -189,7 +189,7 @@ class parse_data:
 
                 return cl.remove_apost(pro_prod) #removing apostraphes and whitespaces
 
-""" PARSING ACCESSION NUMBERS (RAW FORMAT AND SQL FORMAT)"""
+#""" PARSING ACCESSION NUMBERS (RAW FORMAT AND SQL FORMAT)"""
         def simpleparse_acc_no(datafile):
             '''This function is to capture lines that begin
             with the string: Accession
@@ -225,7 +225,7 @@ class parse_data:
 
             return acc_no
 
-""" PARSING DNA SEQUENCE"""
+#""" PARSING DNA SEQUENCE"""
         def parse_dna_seq(datafile):
             '''This function camptures the full dna sequence
             input: strings of each line in text file
