@@ -18,10 +18,11 @@ import re
 from configFile import *
 import re
 
+"""Processing with EcoRI"""
 def doEcoRI(seq):
      """ Process Sequence with restriction enzyme EcoRi
      Input: input ecoRI from cofigfile 
-     Output:Sequence """
+     Output:Sequence after processed with ecoRI """
      f = re.compile(r'' + ecoRI_forward + '')
      r = re.compile(r'' + ecoRI_reverse + '')
      seq = f.sub(ecoRI_forward[0] + ecoRI_char + \
