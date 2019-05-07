@@ -15,9 +15,9 @@ from configFile import *
 """
 from SQL_python_functions import db_query
 from configFile import *
-
+""" Getting Chomosome Locaiton"""
 def getChrLocation(input_type, input_value):
-     """ Function to obtain protein GeneID  from the database
+     """ Function to obtain Chromosome Location from the database
      input: database query Arg2, type, and value from the config file
      output:Chromosome Location from database"""
      chr_location = db_query(dbArg2, input_type, input_value)
