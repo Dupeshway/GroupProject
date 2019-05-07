@@ -27,7 +27,7 @@ def getChrLocation(input_type, input_value):
      input: database query Arg2, type, and value from the config file
      output:Chromosome Location from database"""
      chr_location = db_query(cg.dbArg2, input_type, input_value)
-     if chr_location = '':
+     if chr_location == '':
           return 'Chromosomal Location Missing'
      else:
           return chr_location
