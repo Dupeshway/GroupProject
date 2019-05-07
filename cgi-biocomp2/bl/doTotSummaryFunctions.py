@@ -14,42 +14,46 @@ imported Libraries:
 from SQL_python_functions import db_summary
 from configFile import *
 """
+from config import config as cg
 from SQL_python_functions import db_summary
-from configFile import *
+import sys
+
+sys.path.insert(0, '../db/')
+sys.path.insert(0, '../')
 
 """Summary Functions Module"""
 
 def getTotAccessionNumber():
      """Full summary of Accession Number"""
-     accession_number = db_summary(dbArg1)
+     accession_number = db_summary(cg.dbArg1)
      return accession_number
 
 def getTotChrLocation():
      """Full summary of chromosome location"""
-     chr_location = db_summary(dbArg2)
+     chr_location = db_summary(cg.dbArg2)
      return chr_location
   
 def getTotGeneID():
      """Full summary of Gene ID"""
-     gene_id = db_summary(dbArg3)
+     gene_id = db_summary(cg.dbArg3)
      return gene_id
      
 def getTotProductName():
      """ Full Summary of Protein Product Name"""
-     product_name = db_summary(dbArg4)
+     product_name = db_summary(cg.dbArg4)
      return product_name
 
 def getTotAminoAcidSequence():
      """ Full Summary of Amino Acid Sequence"""
-     amino_acid_sequence = db_summary(dbArg5)
+     amino_acid_sequence = db_summary(cg.dbArg5)
      return amino_acid_sequence
 
 def getTotLocationCDS():
      """ Full Summary of Location of CDS"""
-     cds_location = db_summary(dbArg6)
+     cds_location = db_summary(cg.dbArg6)
      return cds_location
 
 def getTotDNA():
      """ Full Summary of DNA"""
-     dna_sequence = db_summary(dbArg7)
+     dna_sequence = db_summary(cg.dbArg7)
      return dna_sequence
