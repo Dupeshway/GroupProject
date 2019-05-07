@@ -72,13 +72,14 @@ Class: cleaning_data:
 
 Class: parse_data
 
-    def parse_cds(datafile):
+        def parse_cds(datafile):
             '''This function captures the CDS region in a genbank file
             input: text file in genbank format
             output: return captured CDS region numbers, indexed by Accession
             ''' 
-    def parse_prot_trans(datafile):
-      '''This function captures the full dna sequence #KEEP WORKING ON THIS
+        
+        def parse_prot_trans(datafile):
+            '''This function captures the full dna sequence #KEEP WORKING ON THIS
             input: text file in genbank format
             output: return captured protein translation, indexed by Accession
 
