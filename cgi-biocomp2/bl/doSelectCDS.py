@@ -30,24 +30,24 @@ sys.path.insert(0, '../')
 #""" Select CDS"""
 def doSelectCDS(input_type, input_value):
       """ Process select CDS from the getLocationCDS
-     Input: input type and value in config 
-     Output:selected DNA Coordinate """
-     start_cds = doStartCDS(input_type, input_value)
-     end_CDS = doEndCDS(input_type, input_value)
-     dna_sequence = getDNA(input_type, input_value)
+      Input: input type and value in config 
+      Output:selected DNA Coordinate """
+      start_cds = doStartCDS(input_type, input_value)
+      end_CDS = doEndCDS(input_type, input_value)
+      dna_sequence = getDNA(input_type, input_value)
 
-     dna_selected_cds = ''
+      dna_selected_cds = ''
 
-     count_start = -1
-     for x in start_cds:      #adding start cds character
-          dna_selected_cds = dna_sequence[:int(x)+count_start] \
+      count_start = -1
+      for x in start_cds:      #adding start cds character
+           dna_selected_cds = dna_sequence[:int(x)+count_start] \
                              + cg.cds_start_char + dna_sequence[int(x)+count_start:]
-          count_start += 1
+           count_start += 1
 
-     count_end = 1
-     for x in end_cds:        #adding end cds character
-          dna_selected_cds = dna_selected_cds[:int(x)+count_end] \
+      count_end = 1
+      for x in end_cds:        #adding end cds character
+           dna_selected_cds = dna_selected_cds[:int(x)+count_end] \
                              + cg.cds_end_char + dna_selected_cds[int(x)+count_end:]
-          count_end += 2
+           count_end += 2
      
-     return dna_selected_cds
+      return dna_selected_cds
