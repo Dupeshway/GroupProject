@@ -1,7 +1,6 @@
 README: Database Layer documentation
-
-Author: Yobi Livingstone.
 ---------------------------------------------------------------------------------------------------------------
+Author: Yobi Livingstone
 
 Contents: 
 
