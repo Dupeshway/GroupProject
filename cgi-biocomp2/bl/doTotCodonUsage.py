@@ -41,6 +41,6 @@ def doTotCodonUsage():
                codon_count += 1
 
      for key in d:
-          d[key] = round((d[key]/codon_count), 3)
+          d[key] = round((d[key]/codon_count), 3) #rounding ratio to third decimal
 
      return d
