@@ -20,9 +20,9 @@ import re
 """
 
 from config import config as cg
-import doStartCDS
-import doEndCDS
-import getDNA
+from doStartCDS import *
+from doEndCDS import *
+from getDNA import *
 import sys
 
 sys.path.insert(0, '../')
