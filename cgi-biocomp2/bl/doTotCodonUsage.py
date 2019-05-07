@@ -7,17 +7,23 @@ Date:May-7-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Function to process DNA sequence 
+Description: Function to calculate Total Codon Usage
 --------------------------------------------------------------------------
-from SQL_python_functions import *
-import re
-import doCodonDictionary
-from configFile import *
-"""
+from config import config as cg
 from SQL_python_functions import *
 import doCodonDictionary
 import doCodons
-from configFile import *
+import sys
+"""
+
+from config import config as cg
+from SQL_python_functions import *
+import doCodonDictionary
+import doCodons
+import sys
+
+sys.path.insert(0, '../db/')
+sys.path.insert(0, '../')
 
 def doTotCodonUsage():
      def doCodons(dna_sequence):
@@ -25,7 +31,7 @@ def doTotCodonUsage():
      input: dna sequence
      output: count of codon"""
      d = doCodonDictionary()
-     dna_sequence = db_summary(dbArg7)
+     dna_sequence = db_summary(cg.dbArg7)
      codon_count = 0
      codon = doCodons(dna_sequence)
      
