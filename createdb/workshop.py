@@ -7,12 +7,13 @@
 '''DO NOT CALL THESE ARCHIVED FUNCTIONS AS THEY MAY INTERFERE WITH PARSED FILES'''
 
 import re
-
+import sys
 from config import config as cg
 from file_management import file_management as fm
 from cleaning_data import clean_data as cl
 from SQL_format import sql_format as sf
 
+sys.path.insert(0, '../cgi-biocomp2/')
 
 class workshop:
 
