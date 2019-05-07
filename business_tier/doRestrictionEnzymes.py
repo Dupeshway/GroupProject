@@ -26,8 +26,8 @@ import re
 """Process Restriction Enzyme"""
 def doRestrictionEnzymes(input_type, input_value):
      """ Process DNA function with restriction enzyme
-     Input: input type and vaule in cofig 
-     Output:CDS start Coordinate """
+     Input: input type and value in config 
+     Output:DNA seq after restriction enzyme """
      x = getDNA(input_type, input_value)
      y = doEcoRI(x)
      z = doBamHI(y)
