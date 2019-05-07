@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-""" Obtaining product Name"""
+#""" Obtaining product Name"""
 
 def getProductName(input_type, input_value):
      """ Function to obtain protein product name from the database
