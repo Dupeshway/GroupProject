@@ -23,6 +23,8 @@ import getEndCDS
 import getDNA
 import re
 
+
+""" Select CDS"""
 def doSelectCDS(input_type, input_value):
       """ Process select CDS from the getLocationCDS
      Input: input type and vaule in cofig 
