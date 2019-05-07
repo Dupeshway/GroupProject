@@ -187,7 +187,7 @@ class parse_data:
                         prod_count+=1
                         acc_count=0
 
-                return cl.remove_apost(pro_prod) #removing apostraphes and whitespaces
+            return cl.remove_apost(pro_prod) #removing apostraphes and whitespaces
 
 #""" PARSING ACCESSION NUMBERS (RAW FORMAT AND SQL FORMAT)"""
         def simpleparse_acc_no(datafile):
