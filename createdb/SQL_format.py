@@ -28,9 +28,10 @@ from cleaning_data import clean_data as cl
 """SQL Format Module"""
 
 class sql_format:
-    """SQL Parse CDS funciton for Data file"""
+    
+    """SQL Parse CDS function for Data file"""
     def sql_parse_cds(datafile):
-        '''This function converts the output of parse_cds(),
+        '''This function converts the output of parse_cds() for SQL data insertion
         input: text file with accession number and protein trnaslation in alternating lines
         output: returns an SQL format insertion for a database
         '''
@@ -56,6 +57,7 @@ class sql_format:
                     acc_count=0
             
         return (clean_data)
+    
     """ SQL parse pot-translation datafile"""
     def sql_parse_prot_trans(datafile):
         '''This function converts the output of parse_prot_trans(),
@@ -144,10 +146,10 @@ class sql_format:
                         gene_count+=1
                         acc_count=0
 
-        return cl.remove_apost(gene_id) #removing apostraphes and whitespaces
+        return cl.remove_apost(gene_id) #removing apostraphes
 
 
-    """ Parse Chromose Location"""
+    """ Parse Chromosome Location"""
     def parse_chrom_loc(datafile):
         '''Capture one copy of feature in each record of genbank file
         input: Genbank record
@@ -178,4 +180,4 @@ class sql_format:
                         chrom_count+=1
                         acc_count=0
 
-        return cl.remove_apost(chrom_loc) #removing apostraphes and whitespaces
+        return cl.remove_apost(chrom_loc) #removing apostraphes
