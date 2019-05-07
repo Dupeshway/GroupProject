@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Program:Processing codon dicitonary
+Program:Obtain Protein Product Name
 File:getProductName.py
 Version:1.0
 Date:May-5-2019
@@ -21,7 +21,7 @@ from configFile import *
 
 def getProductName(input_type, input_value):
      """ Function to obtain protein product name from the database
-     input: database query with Arg4, type and value from the config file
+     input: database query type and value from the config file
      output:protein product name from database """
      
      product_name = db_query(dbArg4, input_type, input_value)
