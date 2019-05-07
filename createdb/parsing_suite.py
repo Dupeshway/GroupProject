@@ -14,7 +14,7 @@ from parse_genfile import parse_data as pd
 from cleaning_data import clean_data as cl
 from SQL_format import sql_format as sf
 
-#sys.path.insert(0, '../cgi-biocomp2/')
+sys.path.insert(0, '../cgi-biocomp2/')
 
 """Run entire script to fully parse genbank file(r_file)"""
 
