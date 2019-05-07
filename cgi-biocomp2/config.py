@@ -7,7 +7,7 @@ class config:
     '''Variables to call in database layer'''
     
     test_file = 'test_chrom8.txt'
-    r_file = 'chrom_CDS_8.txt'
+    r_file = 'trimmed_chrom_8.txt'
 
     acc_file = 'parsed_acc_no.txt'
     sql_acc_file = 'sql_acc_no.sql'
