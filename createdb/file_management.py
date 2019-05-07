@@ -41,7 +41,7 @@ class file_management:
         f = open(w_file, 'a+')
         f.truncate(0) 
 
-        """Write file parameter"""
+    """Write file parameter"""
     def write_file(datafile, w_file):
         '''Writes to the file parameter
         input 1: opens read file, defined in config, MUST BE SINGLE STRING
@@ -52,8 +52,7 @@ class file_management:
         f.write(datafile)
         print('Data written to:', w_file)
 
-        """ Write List to File Parameter"""
-
+    """ Write List to File Parameter"""
     def write_list(datafile, w_file):
         '''Writes to the file parameter
         input 1: opens read file, defined in config, MUST BE SINGLE STRING
