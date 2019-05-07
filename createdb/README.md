@@ -1,5 +1,6 @@
 
 README: Database Layer documentation
+
 Author: Yobi Livingstone
 ---------------------------------------------------------------------------------------------------------------
 
@@ -13,6 +14,7 @@ Contents:
 ----------------------------------------------------------------------------------------------------------------
  
 Parsing your genbank file
+
 Parsing your data from genbank file, files found in createdb: ../GroupProject/tree/master/createdb:
 
 1) All functions are called and run in the file parsing_suite.py. Run the entire script to fully parse your data.
