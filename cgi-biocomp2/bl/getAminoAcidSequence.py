@@ -21,7 +21,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-"""Get AMino Scid Sequence"""
+#"""Get AMino Scid Sequence"""
 def getAminoAcidSequence(input_type, input_value):
      """ Function to obtain Amino Acid Sequence  from the database
      input: database query Arg5, type, and value from the config file
