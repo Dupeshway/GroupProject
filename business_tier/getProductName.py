@@ -17,7 +17,7 @@ from configFile import *
 from SQL_python_functions import db_query
 from configFile import *
 
-""" Obtaingint product Name"""
+""" Obtaining product Name"""
 
 def getProductName(input_type, input_value):
      """ Function to obtain protein product name from the database
@@ -25,5 +25,7 @@ def getProductName(input_type, input_value):
      output:protein product name from database """
      
      product_name = db_query(dbArg4, input_type, input_value)
-
      return product_name
+
+     if product_name == '':
+          return 'Product Name Missing'
