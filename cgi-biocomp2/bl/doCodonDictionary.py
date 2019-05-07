@@ -9,13 +9,19 @@ Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
 Description: Dictionary for Codon of the Sequence  
 --------------------------------------------------------------------------
+import sys
 from SQL_python_functions import *
 import doCodons
-from configFile import *
+from config import config as cg
 """
+
+import sys
 from SQL_python_functions import *
 import doCodons
-from configFile import *
+from config import config as cg
+
+sys.path.insert(0, '../')
+sys.path.insert(0, '../db/')
 
 """ Condon Dictionary"""
 def doCodonDictionary():
@@ -23,7 +29,7 @@ def doCodonDictionary():
      input: DNA sequence
      output: Codon"""
      d = {}
-     dna_sequence = db_summary(dbArg7)
+     dna_sequence = db_summary(cg.dbArg7)
      codon = doCodons(dna_sequence)
      d[codon] = 0
 
