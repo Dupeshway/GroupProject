@@ -27,9 +27,9 @@ def db_query(output_type, input_type, input_value):
         """
         
         dbname   = "ly001"
-        dbhost   = "ssh.cryst.bbk.ac.uk" #Replace ssh with hope when working from nomachine
-        dbuser   = "ly001"   # Ask a demonstrator
-        dbpass   = "7#b8tpkum"   # Ask a demonstrator
+        dbhost   = "ssh.cryst.bbk.ac.uk"
+        dbuser   = "ly001"   
+        dbpass   = "7#b8tpkum"  
         port     = 3306
         db = pymysql.connect(host=dbhost, port=port, user=dbuser, passwd=dbpass, db=dbname)
                 
@@ -46,9 +46,9 @@ def db_summary(output_type):
         Returning entire record assoiciated with Accession no.
         '''
         dbname   = "ly001"
-        dbhost   = "ssh.cryst.bbk.ac.uk" #Replace ssh with hope when working from nomachine
-        dbuser   = "ly001"   # Ask a demonstrator
-        dbpass   = "7#b8tpkum"   # Ask a demonstrator
+        dbhost   = "ssh.cryst.bbk.ac.uk" 
+        dbuser   = "ly001"   
+        dbpass   = "7#b8tpkum"  
         port     = 3306
         db = pymysql.connect(host=dbhost, port=port, user=dbuser, passwd=dbpass, db=dbname)
         
