@@ -69,6 +69,15 @@ class clean_data:
         """
         clean_data = raw_data.replace('"','')
         return clean_data
+    
+    def hyphenise(raw_data):
+        '''Intended for CDS region database format
+        input: captured CDS region data with periods seperating the integers
+        output: double periods replaced by a hyphen
+        '''
+        raw_data=str(raw_data)
+        clean_data = raw_data.replace('..', '-')
+        return clean_data
 
 #""" Remove Version Nunmber in Acession_No """
     def remove_version(acc_no):
