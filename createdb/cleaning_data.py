@@ -59,6 +59,9 @@ class clean_data:
                 raw_data=raw_data.replace(i,'')
         print(raw_data)
 
+        
+"""PROTEIN TRANSLATION"""
+        
     def remove_apost(raw_data):
          """ Cleaning
         input: raw_data clean data 
