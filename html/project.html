@@ -1,0 +1,122 @@
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <style type='text/css'>
+    <!--
+    h1 {
+        border: none;
+        background: black;
+        color: white;
+        font: bold 18pt Helvetica, Arial, sans-serif;
+        text-align: center;
+        padding: 0.25em;
+    }
+    .container {  
+        background: blue;
+        color: white;
+        padding: 2em;
+        text-align: centre;
+        width: 100px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+
+    .jumbotron {
+        background-color: #800080 !important;
+    }
+
+    a.button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+
+        text-decoration: none;
+        color: initial;
+    }
+    -->
+    </style>
+
+    <title>Gene Database Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   </head>
+   <body>
+        <div class="page-header">
+        <h1>Gene Database Project</h1>
+        </div>
+
+        <div class="container">
+
+        <div class="jumbotron">
+
+            <form name='query' action="http://student.cryst.bbk.ac.uk/cgi-bin/cgiwrap/ly001/cgi_script.py" method="post">
+                <h2> <label> Select one of the following: </label> </h2> <br />
+                <h3> GenBank accession number </h3> <input type='radio' name="type" value="ACCESSION"> 
+                <h3> Chromosomal location </h3> <input type='radio' name="type" value="CHROM_LOC"> 
+                <h3> Gene identifier </h3> <input type='radio' name="type" value="GENE_ID"> 
+                <h3> Protein product names </h3> <input type='radio' name="type" value="PRODUCT_NAME"> 
+                <br /><br />
+
+                <input name="query" type='text' size='80' placeholder="Find specific information by typing one of the selected values here .."/> <br />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+<!-- Was trying to make appendable table - didnt work afterall :/
+
+-->
+
+        <div class="container">
+            <input type ="button" onclick="mytable()" value="Generate table" />
+
+            <script>
+            function mytable() {
+            // get the reference for the body
+            var mybody = document.getElementsByTagName("body")[0];
+
+            // creates <table> and <tbody> elements
+            mytable = document.createElement("table");
+            mytablebody = document.createElement("tbody");
+
+            // creating all cells
+            for(var j = 0; j < 8; j++) {
+                // creates a <tr> element
+                mycurrent_row = document.createElement("tr");
+
+                for(var i = 0; i < 4; i++) {
+                    // creates a <td> element
+                    mycurrent_cell = document.createElement("td");
+                    // creates a Text Node
+                    currenttext = document.createTextNode("cell is row " + j + ", column " + i);
+                    // appends the Text Node we created into the cell <td>
+                    mycurrent_cell.appendChild(currenttext);
+                    // appends the cell <td> into the row <tr>
+                    mycurrent_row.appendChild(mycurrent_cell);
+                }
+                // appends the row <tr> into <tbody>
+                mytablebody.appendChild(mycurrent_row);
+            }
+            
+
+            // appends <tbody> into <table>
+            mytable.appendChild(mytablebody);
+            // appends <table> into <body>
+            mybody.appendChild(mytable);
+            // sets the border attribute of mytable to 2;
+            mytable.setAttribute("border","2");
+                return mytable 
+            }
+            </script>
+        </div>
+
+
+
+   </body>
+</html>
