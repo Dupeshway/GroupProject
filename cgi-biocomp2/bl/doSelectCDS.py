@@ -33,7 +33,7 @@ def doSelectCDS(input_type, input_value):
       Input: input type and value in config 
       Output:selected DNA Coordinate """
       start_cds = doStartCDS(input_type, input_value)
-      end_CDS = doEndCDS(input_type, input_value)
+      end_cds = doEndCDS(input_type, input_value)
       dna_sequence = getDNA(input_type, input_value)
 
       dna_selected_cds = ''
