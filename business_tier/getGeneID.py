@@ -23,5 +23,8 @@ def getGeneID(input_type, input_value):
      input: database query Arg3, type, and value from the config file
      output:Gene ID from database"""
      gene_id = db_query(dbArg3, input_type, input_value)
+     if gene_id == '':
+          return 'Gene ID missing'
+     else:
+          return gene_id
 
-     return gene_id
