@@ -11,13 +11,13 @@ Address: Biological Sciences, Birkbeck ...
 Description: Function to process Amino Acid and CDS
 --------------------------------------------------------------------------
 imported Libraries:
-import getStartCDS
-import getEndCDS
+import doStartCDS
+import doEndCDS
 import getAminoAcidSequence
 import getDNA
 """
-import getStartCDS
-import getEndCDS
+import doStartCDS
+import doEndCDS
 import getAminoAcidSequence
 import getDNA
 
