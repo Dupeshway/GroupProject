@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-"""Summary Functions Module"""
+#"""Summary Functions Module"""
 
 def getTotAccessionNumber():
      """Full summary of Accession Number"""
