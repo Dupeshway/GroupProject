@@ -17,7 +17,7 @@ from SQL_python_functions import db_query
 from configFile import *
 
 def getAminoAcidSequence(input_type, input_value):
-     """ Function to obtain protein GeneID  from the database
+     """ Function to obtain Amino Acid Sequence  from the database
      input: database query Arg5, type, and value from the config file
      output:Amino Acid Sequence from database"""
      amino_acid_sequence = db_query(dbArg5, input_type, input_value)
