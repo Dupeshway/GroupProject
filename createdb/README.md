@@ -13,7 +13,7 @@ Contents:
  
 1) Parsing your data
 
-Parse your data from genbank file, files found in createdb: ../GroupProject/tree/master/createdb:
+Files for parsing your genbank file can be found in createdb: ../GroupProject/tree/master/createdb:
 
 i) The Genbank file to be parsed is 'trimmed_chrom_8.txt' with a total of 286 genbank records (down from ~325)
 
@@ -25,7 +25,7 @@ iii) All files to be opened for reading and writing are specified in config.py
  
 NOTE: Functions within the following classes were called to parse the data:
 Cleaning_data from cleaning_data.py as cl
-Config from config_db.py as cg
+Config from config.py as cg
 File_management from file_management.py as fm
 Parse_data from parse_genfile.py as pd
 Sql_format from SQL_format.py as sf
