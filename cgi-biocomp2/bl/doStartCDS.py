@@ -22,7 +22,7 @@ import getLocationCDS
 """ Get start CDS"""
 def getStartCDS(input_value, input_value):
       """ Process CDS from the getLocationCDS
-     Input: input type and valee in config 
+     Input: input type and value in config 
      Output:CDS start Coordinate """
 
      x = getLocationCDS(input_value, input_value)
