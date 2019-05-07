@@ -8,10 +8,10 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Function to process DNA sequence incorporating restriciton enzyme
+Description: Function to process DNA sequence incorporating restriction enzyme
 --------------------------------------------------------------------------
 Import libraries:
-import getDNA
+import doSelectCDS
 import doEcoRI
 import doBamHI
 import doBsuMI
@@ -21,7 +21,6 @@ import doSelectCDS
 import doEcoRI
 import doBamHI
 import doBsuMI
-import re
 
 """Process Restriction Enzyme"""
 def doRestrictionEnzymes(input_type, input_value):
