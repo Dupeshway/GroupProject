@@ -1,7 +1,27 @@
 #!/usr/bin/env python3
 
 #Yobi Livingstone
-
+"""
+Program: Parsing Suite
+File:parsing_suite.py
+Version:1.0
+Date:May-6-2019
+Author: Yobi Livingstone, Documentation headers(Jeff Li)
+Address: Biological Sciences, Birkbeck ...
+--------------------------------------------------------------------------
+Description: Area to run called functions from parse_genfile.py and from SQL_format.py
+--------------------------------------------------------------------------
+Usage: Parse for accession, cds regions, prot-translation, product name, DNA Seq, Gene Id, and Chromosome Location
+--------------------------------------------------------------------------
+Import libraries: 
+import re
+import sys
+from config import config as cg
+from file_management import file_management as fm
+from parse_genfile import parse_data as pd 
+from cleaning_data import clean_data as cl
+from SQL_format import sql_format as sf
+"""
 
 #PARSING SUITE
 '''Parsing data'''
