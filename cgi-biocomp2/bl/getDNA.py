@@ -12,15 +12,20 @@ Description: Function for getting DNA Sequence from the database
 --------------------------------------------------------------------------
 Import libraries: 
 from SQL_python_functions import db_query
-from configFile import *
+from config import config as cg
+import sys
 """
 from SQL_python_functions import db_query
-from configFile import *
+from config import config as cg
+import sys
+
+sys.path.insert(0, '../db/')
+sys.path.insert(0, '../')
 
 def getDNA(input_type, input_value):
      """ Function to obtain DNA Sequence  from the database
      input: database query type and value from the config file
      output:dna_sequence from database"""
-     dna_sequence = db_query(dbArg7, input_type, input_value)
+     dna_sequence = db_query(cg.dbArg7, input_type, input_value)
      
      return dna_sequence
