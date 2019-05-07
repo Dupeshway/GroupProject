@@ -20,13 +20,13 @@ Import libraries: re
 
 import re
 
-""" Cleaning Module """"
+#""" Cleaning Module """"
 
 class clean_data:
     '''Every function is intended to join, remove, replace iterables (strings, lists etc)
     to make the data easier to handle after capturing/parsing'''
 
-""" Joining Raw Data"""
+#""" Joining Raw Data"""
     
     def join_strings(raw_data):
         '''Join strings
@@ -37,7 +37,7 @@ class clean_data:
         clean_data=clean_data.join(raw_data)
         return clean_data
     
-""" CDS Cleaning """
+#""" CDS Cleaning """
 
     def clean_cds_region(raw_data):
         """ Cleaning CDS region
@@ -60,7 +60,7 @@ class clean_data:
         print(raw_data)
 
         
-"""PROTEIN TRANSLATION CLEANING"""
+#"""PROTEIN TRANSLATION CLEANING"""
         
     def remove_apost(raw_data):
          """ Cleaning
@@ -70,7 +70,7 @@ class clean_data:
         clean_data = raw_data.replace('"','')
         return clean_data
 
-""" Remove Version Nunmber in Acession_No """
+#""" Remove Version Nunmber in Acession_No """
     def remove_version(acc_no):
         '''Accession numbers captured have a version number after a decimal point
         at the end of the number i.e AB12345678.1 This removes the version number [.1]
@@ -83,7 +83,7 @@ class clean_data:
                 acc_no = acc_no[:-2] #captures all except the last two places
         return acc_no
 
-""" White space removal """"
+#""" White space removal """"
     def clean_wspace(dna_seq):
         '''Remove white space and line seperators in all forms
         input: raw DNA sequence
@@ -93,7 +93,7 @@ class clean_data:
         dna_seq = dna_seq.replace(' ', '')
         return(dna_seq)
 
-""" Line Removal """"
+#""" Line Removal """"
     def clean_lines(raw_data):
         '''Remove line seperators in all forms
         input: raw DNA sequence
@@ -102,7 +102,7 @@ class clean_data:
         raw_data = raw_data.replace('\n', '')
         return(raw_data)
 
-"""Removing Number in DNA sequence """
+#"""Removing Number in DNA sequence """
 
     def clean_nos(raw_data):
         '''Remove all numbers from FASTA format DNA sequence
@@ -114,7 +114,7 @@ class clean_data:
 
         return(dna_seq)
 
-""" Capitalise All"""
+#""" Capitalise All"""
     
     def capitalise(raw_data):
         '''Entire string is capitalised
@@ -126,7 +126,7 @@ class clean_data:
             dna_seq=raw_data.upper()
         return dna_seq
 
- """ Ignore N's"""
+ #""" Ignore N's"""
 
     def ignore_nnn(raw_data):
         '''ignore database codon entries with N
