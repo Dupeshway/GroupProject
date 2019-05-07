@@ -27,8 +27,8 @@ import re
 """ Select CDS"""
 def doSelectCDS(input_type, input_value):
       """ Process select CDS from the getLocationCDS
-     Input: input type and vaule in cofig 
-     Output:CDS select Coordinate """
+     Input: input type and value in config 
+     Output:selected DNA Coordinate """
      start_cds = getStartCDS(input_type, input_value)
      end_CDS = getEndCDS(input_type, input_value)
      dna_sequence = getDNA(input_type, input_value)
