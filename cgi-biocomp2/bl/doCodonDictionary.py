@@ -17,7 +17,7 @@ from config import config as cg
 
 import sys
 from SQL_python_functions import *
-import doCodons
+from doCodons import *
 from config import config as cg
 
 sys.path.insert(0, '../')
