@@ -18,9 +18,9 @@ import re
 import getLocationCDS
 """ End of CDS""" 
 def getEndCDS(input_value, input_value):
-     """ Process Coordine ends from the CDS location 
-     Input: input type and vaule in cofig file
-     Output:codinate end of CDS location """
+     """ Process coordinate ends from the CDS location 
+     Input: input type and value in config file
+     Output:coordinate end of CDS location """
      x = getLocationCDS(input_value, input_value)
      coordinate_end = re.findall(r'\-(\d+)', x)
 
