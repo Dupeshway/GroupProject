@@ -22,7 +22,7 @@ import doEcoRI
 import doBamHI
 import doBsuMI
 
-"""Process Restriction Enzyme"""
+#"""Process Restriction Enzyme"""
 def doRestrictionEnzymes(input_type, input_value):
      """ Process DNA function with restriction enzyme
      Input: input type and value in config 
