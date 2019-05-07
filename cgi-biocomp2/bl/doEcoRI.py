@@ -22,7 +22,7 @@ import sys
 
 sys.path.insert(0, '../')
 
-"""Processing with EcoRI"""
+#"""Processing with EcoRI"""
 def doEcoRI(seq):
      """ Process Sequence with restriction enzyme EcoRi
      Input: Raw DNA Sequence 
