@@ -15,9 +15,13 @@ Contents:
 
 Parse your data from genbank file, files found in createdb: ../GroupProject/tree/master/createdb:
 
-i) All functions are called and run in the file parsing_suite.py. Run the entire script to fully parse your data.
+i) The Genbank file to be parsed is 'trimmed_chrom_8.txt' with a total of 286 genbank records (down from ~325)
 
-ii) All files to be opened for reading and writing are specified in config.py
+ii) All functions are called and run in the file parsing_suite.py. Run the entire script to fully parse your data.
+
+iii) All files to be opened for reading and writing are specified in config.py 
+
+
  
 NOTE: Functions within the following classes were called to parse the data:
 Cleaning_data from cleaning_data.py as cl
