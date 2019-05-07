@@ -30,7 +30,7 @@ from cleaning_data import clean_data as cl
 
 class parse_data:
 
-""" Full DNA Sequence"""
+""" Full Amino Acid Sequence (TRANSLATION)"""
 
         def parse_prot_trans(datafile):
             ''' This function captures the full dna sequence 
@@ -126,7 +126,7 @@ class parse_data:
 
    return cl.remove_apost(pro_prod) #removing apostraphes and whitespaces
 
-"""Acession Number Parse"""
+"""Accession Number Parse"""
 
     def simpleparse_acc_no(datafile):
         '''This function is to capture lines that begin
@@ -161,6 +161,7 @@ class parse_data:
                 acc_no += "replace into CHROM8(ACCESSION) VALUES('"+i[12:20]+"');\n"
 
         return acc_no
+
 """ FULL DNA SEQ"""
     def parse_dna_seq(datafile):
         '''This function captures the full dna sequence
