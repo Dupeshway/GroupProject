@@ -14,7 +14,7 @@ import re
 import getLocationCDS
 """
 import re
-import getLocationCDS
+from getLocationCDS import *
 
 #""" End of CDS""" 
 def doEndCDS(input_value, input_value):
