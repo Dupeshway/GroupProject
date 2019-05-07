@@ -17,6 +17,7 @@ import re
 from configFile import *
 import re
 
+"""Processing with BamHI"""
 def doBamHI(seq):
      """ Process Sequence with restriction enzyme BamHI
      Input: input ecoRI from cofigfile 
