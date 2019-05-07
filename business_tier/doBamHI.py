@@ -20,8 +20,8 @@ import re
 """Processing with BamHI"""
 def doBamHI(seq):
      """ Process Sequence with restriction enzyme BamHI
-     Input: input ecoRI from cofigfile 
-     Output:DNA Sequence """
+     Input: Raw DNA Sequence 
+     Output:DNA process with BamHI """
      f = re.compile(r'' + bamHI_forward + '')
      r = re.compile(r'' + bamHI_reverse + '')
      seq = f.sub(bamHI_forward[0] + bamHI_char + \
