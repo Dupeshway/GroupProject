@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, '../')
 from config import config as cg
 
-"""Processed Sequence with BsuMI"""
+#"""Processed Sequence with BsuMI"""
 def doBsuMI(seq):
      """ Process Sequence with restriction enzyme BsuMI
      Input: Raw DNA Sequence 
