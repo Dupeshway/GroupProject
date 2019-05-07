@@ -16,6 +16,9 @@ Usage: For Database Query and setting up database summary
 Import libraries: import pymysql.cursors
 """
 import pymysql.cursors
+import sys
+
+sys.path.insert(0,'../../createdb/')
         
 """ Data Base Query Function"""
 def db_query(output_type, input_type, input_value):
