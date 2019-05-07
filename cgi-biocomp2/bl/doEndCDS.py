@@ -17,7 +17,7 @@ import re
 import getLocationCDS
 
 #""" End of CDS""" 
-def getEndCDS(input_value, input_value):
+def doEndCDS(input_value, input_value):
      """ Process coordinate ends from the CDS location 
      Input: input type and value in config file
      Output:coordinate end of CDS location """
