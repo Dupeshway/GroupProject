@@ -1,7 +1,7 @@
 
 README: Database Layer documentation
 
-Author: Yobi Livingstone
+Author: Yobi Livingstone.
 ---------------------------------------------------------------------------------------------------------------
 
 Contents: 
@@ -13,12 +13,12 @@ Contents:
  
 ----------------------------------------------------------------------------------------------------------------
  
-Parsing your genbank file
+1) Parsing your data
 
-Parsing your data from genbank file, files found in createdb: ../GroupProject/tree/master/createdb:
+Parse your data from genbank file, files found in createdb: ../GroupProject/tree/master/createdb:
 
-1) All functions are called and run in the file parsing_suite.py. Run the entire script to fully parse your data.
-2) All files to be opened for reading and writing are specified in config.py
+i) All functions are called and run in the file parsing_suite.py. Run the entire script to fully parse your data.
+ii) All files to be opened for reading and writing are specified in config.py
  
 NOTE: Functions within the following classes were called to parse the data:
 Cleaning_data from cleaning_data.py as cl
@@ -29,27 +29,29 @@ Sql_format from SQL_format.py as sf
  
 ----------------------------------------------------------------------------------------------------------------
  
-Creating and populating your database:
+2) Creating and populating your database:
+
 Open MYSQL and run the following SQL files found in createdb: ../GroupProject/tree/master/createdb:
-1) CHROM8.sql (This will build your table within the database)
+
+i) CHROM8.sql (This will build your table within the database)
 
 Next populate your table by running the following files in MYSQL:
-1) sql_acc_no.sql (ACCESSION number)
-2) sql_gene_id.sql (GENE_ID, indexed by Accession numbers, some records dont have a Gene_id)
-3) sql_chrom_loc.sql (CHROM_LOC, Chromosome location, indexed by Accession number)
-4) sql_product_name.sql (PRODUCT_NAME, Protein product name, indexed by Accession number)
-5) sql_translation.sql (TRANSLATION, amino acid sequence, indexed by ACCESSION)
-6) sql_cds_regions.sql (CDS_REGIONS, indexed by ACCESSION)
-7) sql_dna_seq.sql (DNA_SEQUENCE, indexed by ACCESSION)
+i) sql_acc_no.sql (ACCESSION number)
+ii) sql_gene_id.sql (GENE_ID, indexed by Accession numbers, some records dont have a Gene_id)
+iii) sql_chrom_loc.sql (CHROM_LOC, Chromosome location, indexed by Accession number)
+iv) sql_product_name.sql (PRODUCT_NAME, Protein product name, indexed by Accession number)
+v) sql_translation.sql (TRANSLATION, amino acid sequence, indexed by ACCESSION)
+vi) sql_cds_regions.sql (CDS_REGIONS, indexed by ACCESSION)
+vii) sql_dna_seq.sql (DNA_SEQUENCE, indexed by ACCESSION)
 
 -------------------------------------------------------------------------------------------------------------
 
-Python-wrapped SQL queries:
+3) Python-wrapped SQL queries:
 Run SQL_python_functions.py found in cgi-biocomp2/db: ../GroupProject/cgi-biocomp2/db/SQL_python_functions.py
 
 --------------------------------------------------------------------------------------------------------------
 
-Database layer APIs:
+4) Database layer APIs:
 
 Class: cleaning_data:
 
