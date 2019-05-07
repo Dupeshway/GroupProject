@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #from database_layer import db_query
 """
-Program:Start CDS
-File:doStartCDS.py
+Program:End CDS
+File:doEndCDS.py
 Version:1.0
 Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
@@ -16,7 +16,7 @@ import getLocationCDS
 """
 import re
 import getLocationCDS
-
+""" End of CDS""" 
 def getEndCDS(input_value, input_value):
      """ Process Coordine ends from the CDS location 
      Input: input type and vaule in cofig file
