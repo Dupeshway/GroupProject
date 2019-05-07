@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-"""CDS location"""
+#"""CDS location"""
 def getLocationCDS(input_type, input_value):
      """ Function to obtain CDS Location from the database
      input: database query with Arg4, type and value from the config file
