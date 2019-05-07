@@ -163,7 +163,7 @@ class parse_data:
         return acc_no
 """ FULL DNA SEQ"""
     def parse_dna_seq(datafile):
-        '''This function camptures the full dna sequence
+        '''This function captures the full dna sequence
         input: strings of each line in text file
         ouput: return captured dna seq numbers
         '''        
