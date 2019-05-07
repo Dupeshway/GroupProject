@@ -11,22 +11,27 @@ Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
 Description: Function to process DNA sequence with restriciton enzyme ecoRI
 --------------------------------------------------------------------------
-from configFile import *
+from config import config as cg
 import re
+import sys
 """
 
-from configFile import *
+from config import config as cg
 import re
+import sys
+
+sys.path.insert(0, '../')
 
 """Processing with EcoRI"""
 def doEcoRI(seq):
      """ Process Sequence with restriction enzyme EcoRi
      Input: Raw DNA Sequence 
      Output:DNA process with EcoRi"""
-     f = re.compile(r'' + ecoRI_forward + '')
-     r = re.compile(r'' + ecoRI_reverse + '')
-     seq = f.sub(ecoRI_forward[0] + ecoRI_char + \
-                 ecoRI_forward[1:len(ecoRI_forward)], seq)
-     seq = r.sub(ecoRI_reverse[0] + ecoRI_char + \
-                 ecoRI_reverse[1:len(ecoRI_reverse)], seq)
+     f = re.compile(r'' + cg.ecoRI_forward + '')
+     r = re.compile(r'' + cg.ecoRI_reverse + '')
+     seq = f.sub(cg.ecoRI_forward[0] + cg.ecoRI_char + \
+                 cg.ecoRI_forward[1:len(cg.ecoRI_forward)], seq)
+     seq = r.sub(cg.ecoRI_reverse[0] + cg.ecoRI_char + \
+                 cg.ecoRI_reverse[1:len(cg.ecoRI_reverse)], seq)
+     
      return seq
