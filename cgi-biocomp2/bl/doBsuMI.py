@@ -11,22 +11,27 @@ Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
 Description: Function to process DNA sequence with restriciton enzyme BsuMI
 --------------------------------------------------------------------------
-from configFile import *
 import re
+import sys
+sys.path.insert(0, '../')
+from config import config as cg
 """
 
-from configFile import *
 import re
+import sys
+sys.path.insert(0, '../')
+from config import config as cg
 
 """Processed Sequence with BsuMI"""
 def doBsuMI(seq):
      """ Process Sequence with restriction enzyme BsuMI
      Input: Raw DNA Sequence 
-     Output:DNA process with BamHI"""
-     f = re.compile(r'' + bsuMI_forward + '')
-     r = re.compile(r'' + bsuMI_reverse + '')
-     seq = f.sub(bsuMI_forward[0] + bsuMI_char + \
-                 bsuMI_forward[1:len(bsuMI_forward)], seq)
-     seq = r.sub(bsuMI_reverse[0] + bsuMI_char + \
-                 bsuMI_reverse[1:len(bsuMI_reverse)], seq)
+     Output:DNA process with BsuMI"""
+     f = re.compile(r'' + cg.bsuMI_forward + '')
+     r = re.compile(r'' + cg.bsuMI_reverse + '')
+     seq = f.sub(cg.bsuMI_forward[0] + cg.bsuMI_char + \
+                 cg.bsuMI_forward[1:len(cg.bsuMI_forward)], seq)
+     seq = r.sub(cg.bsuMI_reverse[0] + cg.bsuMI_char + \
+                 cg.bsuMI_reverse[1:len(cg.bsuMI_reverse)], seq)
+     
      return seq
