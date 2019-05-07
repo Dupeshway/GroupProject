@@ -27,7 +27,7 @@ import sys
 
 sys.path.insert(0, '../')
 
-""" Select CDS"""
+#""" Select CDS"""
 def doSelectCDS(input_type, input_value):
       """ Process select CDS from the getLocationCDS
      Input: input type and value in config 
