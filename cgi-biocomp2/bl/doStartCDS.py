@@ -17,7 +17,7 @@ import getLocationCDS
 """
 
 import re
-import getLocationCDS
+from getLocationCDS import *
 
 #""" Get start CDS"""
 def doStartCDS(input_type, input_value):
