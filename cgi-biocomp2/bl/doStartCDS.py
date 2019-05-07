@@ -20,7 +20,7 @@ import re
 import getLocationCDS
 
 #""" Get start CDS"""
-def getStartCDS(input_value, input_value):
+def doStartCDS(input_value, input_value):
       """ Process CDS from the getLocationCDS
       Input: input type and value in config 
       Output:CDS start Coordinate """
