@@ -11,11 +11,16 @@ Address: Biological Sciences, Birkbeck ...
 Description: Function for getting Protein Product Name from the database 
 --------------------------------------------------------------------------
 imported Libraries:
-from SQL_python_functions import *
-from configFile import *
+from SQL_python_functions import db_query
+from config import config as cg
+import sys
 """
 from SQL_python_functions import db_query
-from configFile import *
+from config import config as cg
+import sys
+
+sys.path.insert(0, '../db/')
+sys.path.insert(0, '../')
 
 """ Obtaining product Name"""
 
@@ -24,7 +29,7 @@ def getProductName(input_type, input_value):
      input: database query type and value from the config file
      output:protein product name from database """
      
-     product_name = db_query(dbArg4, input_type, input_value)
+     product_name = db_query(cg.dbArg4, input_type, input_value)
      if product_name == '':
           return 'Product Name Missing'
      else:
