@@ -11,21 +11,26 @@ Address: Biological Sciences, Birkbeck ...
 Description: Function to process Local Codon usage
 --------------------------------------------------------------------------
 from SQL_python_functions import *
-import re
+import doCodons
 import doCodonDictionary
-from configFile import *
+from config import config as cg
+import sys
 """
 
 from SQL_python_functions import *
 import doCodons
 import doCodonDictionary
+from config import config as cg
+import sys
+
+sys.path.insert(0, '../db/')
 
 def doLocalCodonUsage(input_type, input_value):
      """ Process Coordinate ends from the Local codon usage
      Input: input type and value in config file
      Output: count for codons"""
      d = doCodonDictionary
-     dna_sequence = db_query(dbArg7, input_type, input_value)
+     dna_sequence = db_query(cg.dbArg7, input_type, input_value)
      codon_count = 0
      codon = doCodons(dna_sequence)
 
