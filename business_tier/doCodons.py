@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Program:Restriction Enzyme with BamHI
-File:doBamHI.py
+Program:Condon
+File:doCodons.py
 Version:1.0
 Date:May-7-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
