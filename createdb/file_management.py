@@ -15,13 +15,13 @@ Usage: Parsing through files in the database
 Import libraries:
 """
 
-""" File Management Module"""
+#""" File Management Module"""
 
 class file_management:
 
     from config import config as cg
 
-    """Parsing"""
+    #"""Parsing"""
     def open_file(r_file):
         '''Input: text file of chromosome
         Output: string of each line from input file returned for parsing
@@ -31,7 +31,7 @@ class file_management:
             raw_data = f.read().splitlines()
         return raw_data
 
-    """ Empty File"""
+    #""" Empty File"""
     def wipe_file(w_file):
         '''Wipe a file
         input:w_file to clear
@@ -41,7 +41,7 @@ class file_management:
         f = open(w_file, 'a+')
         f.truncate(0) 
 
-    """Write file parameter"""
+    #"""Write file parameter"""
     def write_file(datafile, w_file):
         '''Writes to the file parameter
         input 1: opens read file, defined in config, MUST BE SINGLE STRING
@@ -52,7 +52,7 @@ class file_management:
         f.write(datafile)
         print('Data written to:', w_file)
 
-    """ Write List to File Parameter"""
+    #""" Write List to File Parameter"""
     def write_list(datafile, w_file):
         '''Writes to the file parameter
         input 1: opens read file, defined in config, MUST BE SINGLE STRING
