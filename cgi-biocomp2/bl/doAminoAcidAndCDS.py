@@ -16,10 +16,10 @@ import doEndCDS
 import getAminoAcidSequence
 import getDNA
 """
-import doStartCDS
-import doEndCDS
-import getAminoAcidSequence
-import getDNA
+from doStartCDS import *
+from doEndCDS import *
+from getAminoAcidSequence import *
+from getDNA import *
 
 def doAminoAcidAndCDS(input_type, input_value):
      """ Processing amino acid and CDS 
@@ -43,7 +43,3 @@ def doAminoAcidAndCDS(input_type, input_value):
           amino_acid_spaced += ' ' + x + ' '
 
      return joint_cds, amino_acid_spaced
-          
-     
-     
-     
