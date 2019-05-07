@@ -12,7 +12,6 @@ Description: Function for getting Protein Product Name from the database
 --------------------------------------------------------------------------
 imported Libraries:
 from SQL_python_functions import *
-import doCodons
 from configFile import *
 """
 from SQL_python_functions import db_query
