@@ -23,7 +23,7 @@ import getDNA
 
 def doAminoAcidAndCDS(input_type, input_value):
      """ Processing amino acid and CDS 
-     input: type and value from cinfig file for dna seq, amino acid seq, coodinate start and coordinate end
+     input: type and value from config file for dna seq, amino acid seq, coordinate start and coordinate end
      output: joined cds and amino acid space """
      dna_sequence = getDNA(input_type, input_value)
      coordinate_start = getStartCDS(input_type, input_value)
