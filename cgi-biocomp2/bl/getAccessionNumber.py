@@ -21,7 +21,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-""" Getting Accession Number"""
+#""" Getting Accession Number"""
 def getAccessionNumber(input_type, input_value):
      """ Function to obtain accession number from the database
      input: database query with Arg4, type and value from the config file
