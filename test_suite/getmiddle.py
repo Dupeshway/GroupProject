@@ -81,7 +81,8 @@ class test_Do_function(unittest.TestCase):
     def test_doCodons(self,dna_sequence):
         pass
         #Functions to process DNA sequence codon
-    def Test_doEcoRI(self, seq):  
+    def Test_doEcoRI(self, seq):
+  
         pass 
         #Process Sequence with restriction enzyme EcoRi
     def test_getEndCDS(self,info):
@@ -90,13 +91,15 @@ class test_Do_function(unittest.TestCase):
     def test_doLocalCodonUsage(self,info):
         pass  
         #Process Coordinate ends from the Local codon usage
-    def doRestrictionEnzymes(self,info):    
+    def doRestrictionEnzymes(self,info):    
         pass
         #Process DNA function with restriction enzyme
     def doSelectCDS(self,info):
+        pass
         #Process select CDS from the getLocationCDS
-    def getStartCDS(self,info):   
-        #Process CDS from the getLocationCDS
+    def getStartCDS(self,info):
+        pass
+        #Process CDS from the getLocationCDS
 
 if __name__ == '__main__':
     unittest.main()
