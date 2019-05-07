@@ -103,14 +103,15 @@ class sql_format:
         with open(datafile, 'r') as f:
             raw_data+=f.readlines()
             for line in raw_data:
-                if dna_count==0:
-                    clean_data+="UPDATE CHROM8 SET DNA_SEQUENCE = '"+line+"'"
-                    dna_count+=1
-                    acc_count=0
 
-                elif acc_count==0:
-                    clean_data+= cl.clean_lines("WHERE ACCESSION='"+line+"';\n")
+                if acc_count==0:
+                    clean_data+= "INSERT into CHROM8(ACCESSION, DNA_SEQUENCE) values ("+cl.clean_lines("'"+line+"',")
                     acc_count+=1
+                    dna_count=0
+
+                elif trans_count==0:
+                    clean_data+= cl.clean_lines("'"+line+"')ON DUPLICATE KEY UPDATE DNA_SEQUENCE = '"+line+"';")+"\n"
+                    trans_count+=1
                     dna_count=0
             
         return (clean_data)
