@@ -12,17 +12,20 @@ Address: Biological Sciences, Birkbeck ...
 Description: Function to process select CDS region
 --------------------------------------------------------------------------
 Import libraries:
+from config import config as cg
 import getStartCDS
 import getEndCDS
 import getDNA
 import re
 """
 
+from config import config as cg
 import getStartCDS
 import getEndCDS
 import getDNA
-import re
+import sys
 
+sys.path.insert(0, '../')
 
 """ Select CDS"""
 def doSelectCDS(input_type, input_value):
@@ -38,13 +41,13 @@ def doSelectCDS(input_type, input_value):
      count_start = -1
      for x in start_cds:
           dna_selected_cds = dna_sequence[:int(x)+count_start] \
-                             + cds_start_char + dna_sequence[int(x)+count_start:]
+                             + cg.cds_start_char + dna_sequence[int(x)+count_start:]
           count_start += 1
 
      count_end = 1
      for x in end_cds:
           dna_selected_cds = dna_selected_cds[:int(x)+count_end] \
-                             + cds_end_char + dna_selected_cds[int(x)+count_end:]
+                             + cg.cds_end_char + dna_selected_cds[int(x)+count_end:]
           count_end += 2
      
      return dna_selected_cds
