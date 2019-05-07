@@ -40,6 +40,6 @@ def doLocalCodonUsage(input_type, input_value):
                codon_count += 1
 
      for key in d:
-          d[key] = round((d[key]/codon_count), 3)
+          d[key] = round((d[key]/codon_count), 3)      #rounding ratio at third decimal
 
      return d
