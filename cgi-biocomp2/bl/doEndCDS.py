@@ -8,14 +8,14 @@ Date:May-5-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Function to Process Coordine ends from the CDS location
+Description: Function to Process Coordinate ends from the CDS location
 --------------------------------------------------------------------------
-Import libraries:
 import re
 import getLocationCDS
 """
 import re
 import getLocationCDS
+
 """ End of CDS""" 
 def getEndCDS(input_value, input_value):
      """ Process coordinate ends from the CDS location 
