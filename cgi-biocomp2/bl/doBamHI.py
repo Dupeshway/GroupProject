@@ -10,22 +10,27 @@ Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
 Description: Function to process DNA sequence with restriciton enzyme BamHI
 --------------------------------------------------------------------------
-from configFile import *
 import re
+import sys
+sys.path.insert(0, '../')
+from config import config as cg
 """
 
-from configFile import *
 import re
+import sys
+sys.path.insert(0, '../')
+from config import config as cg
 
 """Processing with BamHI"""
 def doBamHI(seq):
      """ Process Sequence with restriction enzyme BamHI
      Input: Raw DNA Sequence 
      Output:DNA process with BamHI """
-     f = re.compile(r'' + bamHI_forward + '')
-     r = re.compile(r'' + bamHI_reverse + '')
-     seq = f.sub(bamHI_forward[0] + bamHI_char + \
-                 bamHI_forward[1:len(bamHI_forward)], seq)
-     seq = r.sub(bamHI_reverse[0] + bamHI_char + \
-                 bamHI_reverse[1:len(bamHI_reverse)], seq)
+     f = re.compile(r'' + cg.bamHI_forward + '')
+     r = re.compile(r'' + cg.bamHI_reverse + '')
+     seq = f.sub(cg.bamHI_forward[0] + cg.bamHI_char + \
+                 cg.bamHI_forward[1:len(cg.bamHI_forward)], seq)
+     seq = r.sub(cg.bamHI_reverse[0] + cg.bamHI_char + \
+                 cg.bamHI_reverse[1:len(cg.bamHI_reverse)], seq)
+     
      return seq
