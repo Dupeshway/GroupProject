@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
-""" Getting Gene ID"""
+#""" Getting Gene ID"""
 def getGeneID(input_type, input_value):
      """ Function to obtain protein GeneID  from the database
      input: database query Arg3, type, and value from the config file
