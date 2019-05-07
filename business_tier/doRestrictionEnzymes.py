@@ -23,6 +23,7 @@ import doBamHI
 import doBsuMI
 import re
 
+"""Process Restriction Enzyme"""
 def doRestrictionEnzymes(input_type, input_value):
      """ Process DNA function with restriction enzyme
      Input: input type and vaule in cofig 
