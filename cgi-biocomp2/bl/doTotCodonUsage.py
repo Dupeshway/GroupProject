@@ -18,8 +18,8 @@ import sys
 
 from config import config as cg
 from SQL_python_functions import *
-import doCodonDictionary
-import doCodons
+from doCodonDictionary import *
+from doCodons import *
 import sys
 
 sys.path.insert(0, '../db/')
