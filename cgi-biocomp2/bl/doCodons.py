@@ -23,7 +23,7 @@ import sys
 sys.path.insert(0, '../')
 sys.path.insert(0, '../db/')
 
-""" Process codon of DNA Sequence""" 
+#""" Process codon of DNA Sequence""" 
 def doCodons(dna_sequence):
      """ Functions to process DNA sequence codon
      input: dna sequence
