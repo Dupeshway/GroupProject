@@ -24,10 +24,15 @@ iii) All files to be opened for reading and writing are specified in config.py
 
  
 NOTE: Functions within the following classes were called to parse the data:
+
 Cleaning_data from cleaning_data.py as cl
+
 Config from config.py as cg
+
 File_management from file_management.py as fm
+
 Parse_data from parse_genfile.py as pd
+
 Sql_format from SQL_format.py as sf
  
 ----------------------------------------------------------------------------------------------------------------
@@ -54,6 +59,8 @@ vi) sql_cds_regions.sql (CDS_REGIONS, indexed by ACCESSION)
 
 vii) sql_dna_seq.sql (DNA_SEQUENCE, indexed by ACCESSION)
 
+
+NOTE: The SQL folder contains parsed data that I used for populating the database, I left them there so other group members could populate their own databases
 
 -------------------------------------------------------------------------------------------------------------
 
