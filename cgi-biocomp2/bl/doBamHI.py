@@ -12,14 +12,14 @@ Description: Function to process DNA sequence with restriciton enzyme BamHI
 --------------------------------------------------------------------------
 import re
 import sys
-sys.path.insert(0, '../')
 from config import config as cg
 """
 
 import re
 import sys
-sys.path.insert(0, '../')
 from config import config as cg
+
+sys.path.insert(0, '../')
 
 """Processing with BamHI"""
 def doBamHI(seq):
