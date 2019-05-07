@@ -7,7 +7,7 @@ Date:May-7-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Dictionary for Codon of the Sequenc  
+Description: Dictionary for Codon of the Sequence  
 --------------------------------------------------------------------------
 from SQL_python_functions import *
 import doCodons
@@ -19,9 +19,9 @@ from configFile import *
 
 """ Condon Dictionary"""
 def doCodonDictionary():
-     """ Functions for a dicitonary for DNA sequence codon
-     input: dna sequence
-     output: DNA sequnce with the codon"""
+     """ Functions for a dicitonary for DNA sequence for getting codon
+     input: DNA sequence
+     output: Codon"""
      d = {}
      dna_sequence = db_summary(dbArg7)
      codon = doCodons(dna_sequence)
