@@ -26,7 +26,6 @@ sys.path.insert(0, '../db/')
 sys.path.insert(0, '../')
 
 def doTotCodonUsage():
-     def doCodons(dna_sequence):
      """ Functions to process DNA sequence Tot codon usage
      input: dna sequence
      output: count of codon"""
