@@ -18,10 +18,11 @@ import re
 from configFile import *
 import re
 
+"""Processed Sequence with BsuMI"""
 def doBsuMI(seq):
-     """ Process Sequence with restriction enzyme EcoRi
-     Input: input ecoRI from cofigfile 
-     Output:Sequence """
+     """ Process Sequence with restriction enzyme BsuMI
+     Input: input BsuMI from cofigfile 
+     Output:Sequence processes with BsuMI """
      f = re.compile(r'' + bsuMI_forward + '')
      r = re.compile(r'' + bsuMI_reverse + '')
      seq = f.sub(bsuMI_forward[0] + bsuMI_char + \
