@@ -16,7 +16,7 @@ from configFile import *
 """
 from SQL_python_functions import *
 import re
-import doCodonDictionary
+from doCodonDictionary import *
 from config import config as cg
 import sys
 
