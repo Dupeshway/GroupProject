@@ -21,7 +21,7 @@ from config import config as cg
 
 sys.path.insert(0, '../')
 
-"""Processing with BamHI"""
+#"""Processing with BamHI"""
 def doBamHI(seq):
      """ Process Sequence with restriction enzyme BamHI
      Input: Raw DNA Sequence 
