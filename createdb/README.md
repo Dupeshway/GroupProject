@@ -39,6 +39,7 @@ Open MYSQL and run the following SQL files found in createdb: ../GroupProject/tr
 i) CHROM8.sql (This will build your table within the database)
 
 Next populate your table by running the following files in MYSQL:
+
 i) sql_acc_no.sql (ACCESSION number)
 
 ii) sql_gene_id.sql (GENE_ID, indexed by Accession numbers, some records dont have a Gene_id)
