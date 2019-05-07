@@ -19,9 +19,9 @@ from config import config as cg
 
 import re
 import sys
-sys.path.insert(0, '../')
 from config import config as cg
 
+sys.path.insert(0, '../')
 #"""Processed Sequence with BsuMI"""
 def doBsuMI(seq):
      """ Process Sequence with restriction enzyme BsuMI
