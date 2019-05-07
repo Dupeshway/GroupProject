@@ -9,7 +9,7 @@ Function:
 Author: Jeff Li
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description:selenium To test for middl layer
+Description:  Test for middle layer
 --------------------------------------------------------------------------
 Usage: Testing for middle layer 
 --------------------------------------------------------------------------
