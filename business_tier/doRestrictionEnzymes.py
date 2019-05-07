@@ -17,7 +17,7 @@ import doBamHI
 import doBsuMI
 import re
 """
-import getDNA
+import doSelectCDS
 import doEcoRI
 import doBamHI
 import doBsuMI
@@ -28,7 +28,7 @@ def doRestrictionEnzymes(input_type, input_value):
      """ Process DNA function with restriction enzyme
      Input: input type and value in config 
      Output:DNA seq after restriction enzyme """
-     x = getDNA(input_type, input_value)
+     x = doSelectCDS(input_type, input_value)
      y = doEcoRI(x)
      z = doBamHI(y)
      dna_sequence = doBsuMI(z)
