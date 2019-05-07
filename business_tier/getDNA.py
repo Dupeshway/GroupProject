@@ -18,7 +18,7 @@ from SQL_python_functions import db_query
 from configFile import *
 
 def getDNA(input_type, input_value):
-     """ Function to obtain protein GeneID  from the database
+     """ Function to obtain DNA Sequence  from the database
      input: database query type and value from the config file
      output:dna_sequence from database"""
      dna_sequence = db_query(dbArg7, input_type, input_value)
