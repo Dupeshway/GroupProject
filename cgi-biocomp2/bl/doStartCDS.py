@@ -22,10 +22,10 @@ import getLocationCDS
 #""" Get start CDS"""
 def getStartCDS(input_value, input_value):
       """ Process CDS from the getLocationCDS
-     Input: input type and value in config 
-     Output:CDS start Coordinate """
+      Input: input type and value in config 
+      Output:CDS start Coordinate """
 
-     x = getLocationCDS(input_value, input_value)
-     coordinate_start = re.findall(r'(\d+)\-', x)
+      x = getLocationCDS(input_value, input_value)
+      coordinate_start = re.findall(r'(\d+)\-', x)
 
-     return coordinate_start
+      return coordinate_start
