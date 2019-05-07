@@ -18,8 +18,8 @@ import sys
 """
 
 from SQL_python_functions import *
-import doCodons
-import doCodonDictionary
+from doCodons  import *
+from doCodonDictionary  import *
 from config import config as cg
 import sys
 
