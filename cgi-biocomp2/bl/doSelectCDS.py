@@ -39,13 +39,13 @@ def doSelectCDS(input_type, input_value):
      dna_selected_cds = ''
 
      count_start = -1
-     for x in start_cds:
+     for x in start_cds:      #adding start cds character
           dna_selected_cds = dna_sequence[:int(x)+count_start] \
                              + cg.cds_start_char + dna_sequence[int(x)+count_start:]
           count_start += 1
 
      count_end = 1
-     for x in end_cds:
+     for x in end_cds:        #adding end cds character
           dna_selected_cds = dna_selected_cds[:int(x)+count_end] \
                              + cg.cds_end_char + dna_selected_cds[int(x)+count_end:]
           count_end += 2
