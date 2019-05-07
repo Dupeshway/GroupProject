@@ -11,8 +11,9 @@ Address: Biological Sciences, Birkbeck ...
 Description: Reuturn Summary from the database 
 --------------------------------------------------------------------------
 imported Libraries:
+from config import config as cg
 from SQL_python_functions import db_summary
-from configFile import *
+import sys
 """
 from config import config as cg
 from SQL_python_functions import db_summary
