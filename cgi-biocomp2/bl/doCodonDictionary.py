@@ -23,7 +23,7 @@ from config import config as cg
 sys.path.insert(0, '../')
 sys.path.insert(0, '../db/')
 
-""" Condon Dictionary"""
+#""" Condon Dictionary"""
 def doCodonDictionary():
      """ Functions for a dicitonary for DNA sequence for getting codon
      input: DNA sequence
