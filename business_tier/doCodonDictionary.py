@@ -7,7 +7,7 @@ Date:May-7-2019
 Author: Margherita Martorana, Documentation headers(Jeff Li)
 Address: Biological Sciences, Birkbeck ...
 --------------------------------------------------------------------------
-Description: Dictionary for Codeon of the Sequenc  
+Description: Dictionary for Codon of the Sequenc  
 --------------------------------------------------------------------------
 from SQL_python_functions import *
 import doCodons
