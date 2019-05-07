@@ -22,9 +22,12 @@ from file_management import file_management as fm
 from cleaning_data import clean_data as cl
 """
 import re
+import sys
 from config import config as cg
 from file_management import file_management as fm
 from cleaning_data import clean_data as cl
+
+sys.path.insert(0, '../cgi-biocomp2/')
 
 """Clear Parse Module"""
 
