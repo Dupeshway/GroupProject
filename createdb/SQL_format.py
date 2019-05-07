@@ -13,17 +13,21 @@ Usage: Parse for cds,pot-translation, DNA Seq, Gene Id, and Chromose Location
 --------------------------------------------------------------------------
 Import libraries: 
 import re
-from config_db import config as cg
+import sys
+from config import config as cg
 from file_management import file_management as fm
 from parse_genfile import parse_data as pd 
 from cleaning_data import clean_data as cl
 """
 
 import re
-from config_db import config as cg
+import sys
+from config import config as cg
 from file_management import file_management as fm
 from parse_genfile import parse_data as pd 
 from cleaning_data import clean_data as cl
+
+sys.path.insert(0, '../cgi-biocomp2/')
 
 """SQL Format Module"""
 
