@@ -23,7 +23,7 @@ from configFile import *
 def doCodons(dna_sequence):
      """ Functions to process DNA sequence codon
      input: dna sequence
-     output: DNA sequnce with the codon"""
+     output: Codon for DNA seq"""
      p = re.compile(r'[ATCG]{3}')
      dna_sequence = db_query(dbArg7, input_type, input_value)
 
