@@ -63,7 +63,7 @@ class clean_data:
 #"""PROTEIN TRANSLATION CLEANING"""
         
     def remove_apost(raw_data):
-         """ Cleaning
+        """ Cleaning
         input: raw_data clean data 
         output: raw_data space removed
         """
