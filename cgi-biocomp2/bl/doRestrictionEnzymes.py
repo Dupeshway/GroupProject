@@ -17,10 +17,10 @@ import doBamHI
 import doBsuMI
 import re
 """
-import doSelectCDS
-import doEcoRI
-import doBamHI
-import doBsuMI
+from doSelectCDS import *
+from doEcoRI import *
+from doBamHI import *
+from doBsuMI import *
 
 #"""Process Restriction Enzyme"""
 def doRestrictionEnzymes(input_type, input_value):
