@@ -1,7 +1,6 @@
-# GroupProject
-YMCJ Biocomp2 Group project
+# Chromosomal Database
 
-This is a project for designing a browser for chromosome 8 for Biocomputing II module at Birkbeck College
+This is a functional backend database to frontend browser for all protein coding regions found in Human Chromosome 8:
 
 The codes are organized into four main directories
    createdb This is where to find codes for populating the sql database, parsing, cleaning raw data, and file management. 
